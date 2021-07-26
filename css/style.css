@@ -24,6 +24,16 @@ body {
       font-size: 4rem;
       color: #afffc3;
       text-decoration: none;
-      transition: color 200ms, border 300ms; }
+      transition: color 200ms; }
       #sideMenu #initials a:hover {
+        color: #49ff77; }
+  #sideMenu #mainNav ul {
+    list-style: none;
+    padding: 0;
+    text-align: center; }
+    #sideMenu #mainNav ul a {
+      color: #afffc3;
+      text-decoration: none;
+      transition: color 200ms; }
+      #sideMenu #mainNav ul a:hover {
         color: #49ff77; }

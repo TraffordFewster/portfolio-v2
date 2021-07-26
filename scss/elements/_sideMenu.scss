@@ -14,9 +14,25 @@
             font-size: 4rem;
             color: $accentColor;
             text-decoration: none;
-            transition: color 200ms, border 300ms;
+            transition: color 200ms;
             &:hover{
                 color: darken($accentColor,20);
+            }
+        }
+    }
+
+    #mainNav{
+        ul{
+            list-style: none;
+            padding: 0;
+            text-align: center;
+            a{
+                color: $accentColor;
+                text-decoration: none;
+                transition: color 200ms;
+                &:hover{
+                    color: darken($accentColor,20);
+                }
             }
         }
     }
