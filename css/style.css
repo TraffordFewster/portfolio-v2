@@ -1,39 +1,118 @@
-@import url("https://fonts.googleapis.com/css2?family=Righteous&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100;400;700&family=Righteous&display=swap");
 .titleFont {
   font-family: 'Righteous', cursive; }
+
+.coolHover::before, .coolHover::after {
+  content: "";
+  position: absolute;
+  width: 0%;
+  bottom: -5px;
+  height: 2px;
+  margin: 5px 0 0;
+  transition: left , right , opacity, width;
+  transition-timing-function: ease-in-out;
+  transition-duration: 500ms;
+  opacity: 0;
+  background: #48cbff; }
+
+.coolHover::before {
+  left: 50%; }
+
+.coolHover::after {
+  right: 50%; }
+
+.coolHover:hover {
+  color: #48cbff; }
+  .coolHover:hover::before {
+    left: 0%;
+    width: 50%;
+    opacity: 1; }
+  .coolHover:hover::after {
+    right: 0%;
+    width: 50%;
+    opacity: 1; }
+
+.m-auto {
+  display: block;
+  margin: auto; }
 
 body {
   background-color: #222222;
   padding: 0;
   margin: 0;
   box-sizing: border-box;
-  color: #999999; }
+  color: #999999;
+  font-family: 'Noto Sans JP', cursive; }
 
 #sideMenu {
   position: fixed;
   height: 100vh;
   width: 200px;
-  background-color: #333333; }
+  background-color: #333333;
+  display: flex;
+  flex-direction: column;
+  border-right: solid 2px #aee8ff; }
   #sideMenu #initials {
-    color: #afffc3;
+    color: #aee8ff;
     text-align: center;
     padding: 8px; }
     #sideMenu #initials a {
       display: inline-block;
       padding: 8px;
       font-size: 4rem;
-      color: #afffc3;
+      color: #aee8ff;
       text-decoration: none;
       transition: color 200ms; }
       #sideMenu #initials a:hover {
-        color: #49ff77; }
-  #sideMenu #mainNav ul {
+        color: #48cbff; }
+  #sideMenu hr {
+    margin: 8px 0;
+    border-color: #aee8ff; }
+  #sideMenu ul {
+    display: flex;
+    flex-direction: column;
     list-style: none;
     padding: 0;
     text-align: center; }
-    #sideMenu #mainNav ul a {
-      color: #afffc3;
+    #sideMenu ul li {
+      padding: 8px; }
+    #sideMenu ul a {
+      color: #aee8ff;
       text-decoration: none;
-      transition: color 200ms; }
-      #sideMenu #mainNav ul a:hover {
-        color: #49ff77; }
+      transition: color 200ms;
+      position: relative; }
+      #sideMenu ul a:hover {
+        color: #48cbff; }
+  #sideMenu #socialMediaList {
+    display: inline-block; }
+    #sideMenu #socialMediaList li {
+      display: inline-block;
+      font-size: 1.5rem; }
+
+main {
+  max-width: calc(100% - 200px);
+  min-width: calc(100% - 200px);
+  display: block;
+  transform: translateX(200px);
+  overflow: hidden; }
+
+header {
+  background-image: url(/img/headerbg.jpg);
+  background-repeat: no-repeat;
+  background-size: 200%;
+  overflow: hidden;
+  animation-name: MOVE-BG;
+  animation-duration: 120s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite; }
+
+@keyframes MOVE-BG {
+  0% {
+    background-position: 0%; }
+  50% {
+    background-position: 100%; }
+  100% {
+    background-position: 0%; } }
+
+.mainPageHeader {
+  height: 100vh; }

@@ -1,3 +1,46 @@
 .titleFont{
     font-family: 'Righteous', cursive;
 }
+
+.coolHover{
+    &::before,&::after{
+        content: "";
+        position: absolute;
+        width: 0%;
+        bottom: -5px;
+        height: 2px;
+        margin: 5px 0 0;
+        transition: left , right , opacity, width ;
+        transition-timing-function: ease-in-out;
+        transition-duration: 500ms;
+        opacity: 0;
+        background: darken($accentColor,20);
+    }
+    &::before{
+        left: 50%;
+    }
+    &::after{
+        right:50%;
+    }
+
+
+    &:hover{
+        color: darken($accentColor,20);
+        
+        &::before{
+            left: 0%;
+            width: 50%;
+            opacity: 1;
+        }
+        &::after{
+            right:0%;
+            width: 50%;
+            opacity: 1;
+        }
+    }
+}
+
+.m-auto{
+    display: block;
+    margin: auto;
+}

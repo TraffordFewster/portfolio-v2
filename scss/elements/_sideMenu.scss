@@ -3,6 +3,8 @@
     height: 100vh;
     width: $sideMenuWidth;
     background-color: $sideMenuBackground;
+    display: flex;
+    flex-direction: column;
 
     #initials{
         color: $accentColor;
@@ -20,20 +22,38 @@
             }
         }
     }
+    hr{
+        margin: $padding 0;
+        border-color: $accentColor;
+    }
+    border-right: solid 2px $accentColor;
 
-    #mainNav{
-        ul{
-            list-style: none;
-            padding: 0;
-            text-align: center;
-            a{
-                color: $accentColor;
-                text-decoration: none;
-                transition: color 200ms;
-                &:hover{
-                    color: darken($accentColor,20);
-                }
+    ul{
+        display: flex;
+        flex-direction: column;
+        list-style: none;
+        padding: 0;
+        text-align: center;
+    
+        li{
+            padding: $padding;
+        }
+        a{
+            color: $accentColor;
+            text-decoration: none;
+            transition: color 200ms;
+            position: relative;
+            &:hover{
+                color: darken($accentColor,20);
             }
+        }
+    }
+
+    #socialMediaList{
+        display: inline-block;
+        li{
+            display: inline-block;
+            font-size: 1.5rem;
         }
     }
 }

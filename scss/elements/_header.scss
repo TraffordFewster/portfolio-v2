@@ -1,0 +1,27 @@
+header{
+    background-image: url(/img/headerbg.jpg);
+    background-repeat: no-repeat;
+    background-size: 200%;
+    overflow: hidden;
+
+    animation-name: MOVE-BG;
+    animation-duration: 120s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+}
+
+@keyframes MOVE-BG {
+   0% {
+     background-position: 0%;
+   }
+   50% { 
+     background-position: 100%;
+   }
+   100% {
+     background-position: 0%;
+   }
+}
+
+.mainPageHeader{
+    height: 100vh;
+}
