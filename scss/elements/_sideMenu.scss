@@ -1,0 +1,23 @@
+#sideMenu{
+    position: fixed;
+    height: 100vh;
+    width: $sideMenuWidth;
+    background-color: $sideMenuBackground;
+
+    #initials{
+        color: $accentColor;
+        text-align: center;
+        padding: $padding;
+        a{
+            display: inline-block;
+            padding: $padding;
+            font-size: 4rem;
+            color: $accentColor;
+            text-decoration: none;
+            transition: color 200ms, border 300ms;
+            &:hover{
+                color: darken($accentColor,20);
+            }
+        }
+    }
+}

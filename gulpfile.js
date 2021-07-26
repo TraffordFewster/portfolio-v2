@@ -37,7 +37,7 @@ gulp.task('es6', () => {
 gulp.task('run', gulp.parallel('sass', 'css', 'es6'));
 
 gulp.task('watch', function () {
-	gulp.watch('./scss/*.scss', gulp.parallel('sass'));
+	gulp.watch('./scss/*/*.scss', gulp.parallel('sass'));
 	gulp.watch('./css/*.css', gulp.parallel('css'));
 	gulp.watch('js/*.js', gulp.parallel('es6'));
 });
