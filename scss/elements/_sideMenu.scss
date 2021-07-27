@@ -1,10 +1,12 @@
 #sideMenu{
+    box-sizing: border-box;
     position: fixed;
     height: 100vh;
     width: $sideMenuWidth;
     background-color: $sideMenuBackground;
     display: flex;
     flex-direction: column;
+    border-right: solid 2px $accentColor;
 
     #initials{
         color: $accentColor;
@@ -26,7 +28,6 @@
         margin: $padding 0;
         border-color: $accentColor;
     }
-    border-right: solid 2px $accentColor;
 
     ul{
         display: flex;

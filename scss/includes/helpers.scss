@@ -3,6 +3,7 @@
 }
 
 .coolHover{
+    position: relative;
     &::before,&::after{
         content: "";
         position: absolute;
@@ -10,7 +11,7 @@
         bottom: -5px;
         height: 2px;
         margin: 5px 0 0;
-        transition: left , right , opacity, width ;
+        transition: left , right , width, opacity, color ;
         transition-timing-function: ease-in-out;
         transition-duration: 500ms;
         opacity: 0;

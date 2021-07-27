@@ -1,6 +1,5 @@
 main{
-    max-width: calc(100% - #{$sideMenuWidth});
-    min-width: calc(100% - #{$sideMenuWidth});
+    width: calc(100% - #{$sideMenuWidth});
     display: block;
     transform: translateX($sideMenuWidth);
     overflow: hidden;

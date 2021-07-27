@@ -8,6 +8,9 @@
     <link rel="stylesheet" href="dist/style.css">
     <script src="https://kit.fontawesome.com/ebb02e5adb.js" crossorigin="anonymous"></script>
 
+
+    <script src="dist/contactValidation.js" defer></script>
+
     </head>
 <body>
 
@@ -37,7 +40,10 @@
 
     <main>
         <header class="mainPageHeader">
-
+            <div id="titleHolder">
+                <h1>My Name Is Trafford Fewster</h1>
+                <h3>I'm a developer</h3>
+            </div>
         </header>
         <div id="projects">
             <article id="p1"></article>
@@ -48,7 +54,46 @@
             <article id="p6"></article>
         </div>
         <footer id="contact">
-
+            <div id="contactDetails">
+                <h4>Get In Touch</h4>
+                <p>Send me a message with any queries of concerns you might have!</p>
+                <h5><a class="coolHover" href="tel:07859878973">07859 878973</a></h5>
+                <h5><a class="coolHover" href="mailto:contact@trafford.dev">contact@trafford.dev</a></h5>
+                <p>I will try my best get back to you in a reasonable amount of time.</p>
+            </div>
+            <div id="contactForm">
+                <form action="" onsubmit="return validateContactForm();">
+                    <fieldset>
+                        <div class="mr">
+                            <label for="first_name">First Name <span class="required">*</span></label>
+                            <input type="text" name="first_name" id="first_name">
+                        </div>
+                        <div class="ml">
+                            <label for="last_name">Last Name <span class="required">*</span></label>
+                            <input type="text" name="last_name" id="last_name">
+                        </div>
+                    </fieldset>
+                    <fieldset>
+                        <div>
+                            <label for="email">Email <span class="required">*</span></label>
+                            <input type="email" name="email" id="email">
+                        </div>
+                    </fieldset>
+                    <fieldset>
+                        <div>
+                            <label for="email">Subject</label>
+                            <input type="text" name="subject" id="subject">
+                        </div>
+                    </fieldset>
+                    <fieldset>
+                        <div>
+                            <label for="message">Message <span class="required">*</span></label>
+                            <textarea name="message" id="message"></textarea>
+                        </div>
+                    </fieldset>
+                    <input id="submitButton" type="submit" value="Submit">
+                </form>
+            </div>
         </footer>
     </main>
     

@@ -3,11 +3,30 @@ header{
     background-repeat: no-repeat;
     background-size: 200%;
     overflow: hidden;
+    position: relative;
 
     animation-name: MOVE-BG;
     animation-duration: 120s;
     animation-timing-function: linear;
     animation-iteration-count: infinite;
+
+    #titleHolder{
+        text-align: center;
+        background: $baseBackground;
+        position: absolute;
+        top:50%;
+        left:50%;
+        display: inline-block;
+        padding: $padding;
+        margin: auto;
+        width: auto;
+        border-radius: $padding;
+        color: $accentColor;
+        h1,h3{
+            margin: 0;
+        }
+        transform: translate(-50%,-50%);
+    }
 }
 
 @keyframes MOVE-BG {

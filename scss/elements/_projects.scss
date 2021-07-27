@@ -1,0 +1,12 @@
+#projects{
+    display: flex;
+    flex-wrap: wrap;
+    margin: $padding;
+    article{
+        flex: 1;
+        min-width: 25%;
+        margin: $padding;
+        height: 400px;
+        background: red;
+    }
+}
