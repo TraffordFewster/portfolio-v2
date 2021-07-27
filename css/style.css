@@ -8,12 +8,12 @@
     content: "";
     position: absolute;
     width: 0%;
-    bottom: -5px;
+    bottom: -2px;
     height: 2px;
     margin: 5px 0 0;
     transition: left , right , width, opacity, color;
     transition-timing-function: ease-in-out;
-    transition-duration: 500ms;
+    transition-duration: 200ms;
     opacity: 0;
     background: #48cbff; }
   .coolHover::before {
@@ -35,12 +35,15 @@
   display: block;
   margin: auto; }
 
+.addPadding {
+  padding: 8px; }
+
 body {
   background-color: #222222;
   padding: 0;
   margin: 0;
   box-sizing: border-box;
-  color: #999999;
+  color: #c5c5c5;
   font-family: 'Noto Sans JP', cursive; }
 
 #sideMenu {
@@ -135,13 +138,53 @@ header {
 #projects {
   display: flex;
   flex-wrap: wrap;
-  margin: 8px; }
+  margin: 16px; }
   #projects article {
+    display: block;
     flex: 1;
     min-width: 25%;
-    margin: 8px;
-    height: 400px;
-    background: red; }
+    max-width: 100%;
+    margin: 16px;
+    height: 380px;
+    background: #333333;
+    border-radius: 8px;
+    border: 2px solid #aee8ff;
+    box-shadow: 1px 1px 5px 1px #aee8ff;
+    position: relative;
+    overflow: hidden;
+    color: #c5c5c5;
+    transition: transform 200ms; }
+    #projects article h4 {
+      display: block;
+      padding: 8px;
+      margin: 0; }
+    #projects article button {
+      position: absolute;
+      bottom: 8px;
+      left: 8px;
+      background: #00000000;
+      border: none;
+      outline: none;
+      padding: 8px;
+      border-radius: 8px;
+      border: solid 2px #aee8ff;
+      color: #c5c5c5;
+      transition: background-color 200ms, color 200ms; }
+    #projects article:hover {
+      cursor: pointer;
+      transform: scale(1.1);
+      z-index: 100; }
+      #projects article:hover button {
+        background: #aee8ff;
+        color: #333333; }
+
+.img {
+  width: 100%;
+  height: 300px;
+  overflow: hidden;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat; }
 
 #contact {
   margin: 16px;
@@ -208,3 +251,43 @@ header {
         color: #222222;
         background: #aee8ff;
         cursor: pointer; }
+
+#projectModalBackground {
+  position: fixed;
+  width: 100%;
+  height: 100vh;
+  background: rgba(0, 0, 0, 0.314);
+  z-index: 1000;
+  padding: 8px;
+  overflow: hidden; }
+  #projectModalBackground #projectModal {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 700px;
+    max-width: 90%;
+    height: auto;
+    background: #333333;
+    border-radius: 8px;
+    border: 2px solid #aee8ff;
+    box-shadow: 1px 1px 5px 1px #aee8ff;
+    transform: translate(-50%, -50%);
+    overflow: hidden; }
+    #projectModalBackground #projectModal .img {
+      max-height: 40vh;
+      overflow: hidden; }
+  #projectModalBackground #flexHack {
+    display: flex; }
+  #projectModalBackground ul {
+    list-style: none;
+    padding: 0;
+    margin: -8px;
+    display: inline-block; }
+    #projectModalBackground ul li {
+      font-size: 2rem;
+      display: inline-block;
+      padding: 8px; }
+      #projectModalBackground ul li a {
+        color: #aee8ff; }
+  #projectModalBackground #links {
+    margin-left: auto !important; }

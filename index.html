@@ -10,6 +10,7 @@
 
 
     <script src="dist/contactValidation.js" defer></script>
+    <script src="dist/projectFiller.js" defer></script>
 
     </head>
 <body>
@@ -38,6 +39,30 @@
         <!-- </div> -->
     </nav>
 
+    <div id="projectModalBackground" style="display: none;">
+        <div id="projectModal">
+            <div id="PMImage" class="img" style="background-image:url('/img/projects/placeholder.png')"></div>
+            <div class="addPadding">
+                <h4 id="PMTitle">Placeholder</h4>
+                <p id="PMDescription">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean ac sagittis nulla. Etiam interdum leo rhoncus nunc aliquet, quis commodo neque congue. Integer ultricies velit dolor, eget viverra dui tincidunt id. Nulla facilisi. Nullam posuere ligula in dolor porta egestas. Vivamus ac lacinia magna. Etiam congue leo ut quam iaculis mollis. Phasellus risus dolor, maximus sed dolor sit amet, porta aliquam lectus. Aliquam erat volutpat. Nullam faucibus diam vel rhoncus consectetur. Proin a lacus elementum, faucibus tortor eget, mollis leo.</p>
+                <div id="flexHack">
+                    <ul id="PMLanguages">
+                        <li><i class="fab fa-html5"></i></li>
+                        <li><i class="fab fa-css3-alt"></i></li>
+                        <li><i class="fab fa-sass"></i></li>
+                        <li><i class="fab fa-php"></i></li>
+                    </ul>
+
+                    <ul id="links">
+                        <li><a id="PMGit" href="#" class="coolHover"><i class="fab fa-github-square"></i></a></li>
+                        <li><a id="PMLink" href="#" class="coolHover"><i class="fas fa-link"></i></a></li>
+                    </ul>
+                </div>
+        
+            </div>
+        </div>
+    </div>
+
     <main>
         <header class="mainPageHeader">
             <div id="titleHolder">
@@ -45,14 +70,21 @@
                 <h3>I'm a developer</h3>
             </div>
         </header>
+
+
         <div id="projects">
+            <article id="p0">
+                <img src="" alt="">
+                <button onclick=""></button>
+            </article>
             <article id="p1"></article>
             <article id="p2"></article>
             <article id="p3"></article>
             <article id="p4"></article>
             <article id="p5"></article>
-            <article id="p6"></article>
         </div>
+
+
         <footer id="contact">
             <div id="contactDetails">
                 <h4>Get In Touch</h4>

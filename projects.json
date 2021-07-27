@@ -1,0 +1,56 @@
+{
+    "projects":[
+        {
+            "title":"Super Pog Project",
+            "description":"Amazing",
+            "img":"https://cdn.tmonkeyt.dev/i/n84we.png",
+            "link": "https://example.com",
+            "github": "https://github.com",
+            "languages": ["HTML","CSS","PHP","LARAVEL","SASS","JS"]
+        },
+        {
+            "title":"Placeholder",
+            "description":"lorem ipsum",
+            "img":"/img/projects/placeholder.png",
+            "link": null,
+            "github": null,
+            "languages": ["HTML","CSS","PHP","LARAVEL","SASS","JS"]
+        },
+        {
+            "title":"Placeholder",
+            "description":"lorem ipsum",
+            "img":"/img/projects/placeholder.png",
+            "link": null,
+            "github": null,
+            "languages": ["HTML","CSS","PHP","LARAVEL","SASS","JS"]
+        },
+        {
+            "title":"Placeholder",
+            "description":"lorem ipsum",
+            "img":"/img/projects/placeholder.png",
+            "link": null,
+            "github": null,
+            "languages": ["HTML","CSS","PHP","LARAVEL","SASS","JS"]
+        },
+        {
+            "title":"Placeholder",
+            "description":"lorem ipsum",
+            "img":"/img/projects/placeholder.png",
+            "link": null,
+            "github": null,
+            "languages": ["HTML","CSS","PHP","LARAVEL","SASS","JS"]
+        },
+        {
+            "title":"Placeholder",
+            "description":"lorem ipsum",
+            "img":"/img/projects/placeholder.png",
+            "link": null,
+            "github": null,
+            "languages": ["HTML","CSS","PHP","LARAVEL","SASS","JS"]
+        }
+    ],
+    "codeExamples":[
+
+    ]
+
+}

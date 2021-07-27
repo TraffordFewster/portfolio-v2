@@ -1,0 +1,48 @@
+#projectModalBackground{
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    background: rgba(0, 0, 0, 0.314);
+    z-index: 1000;
+    padding: $padding;
+    overflow: hidden;
+    #projectModal{
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        width: 700px;
+        max-width:90%;
+        height: auto;
+        background: $sideMenuBackground;
+        border-radius: $padding;
+        border: 2px solid $accentColor;
+        box-shadow: 1px 1px 5px 1px $accentColor;
+        transform: translate(-50%, -50%);
+        overflow: hidden;
+        .img{
+            max-height: 40vh;
+            overflow: hidden;
+        }
+    }
+    #flexHack{
+        display: flex;
+    }
+    ul{
+        list-style: none;
+        padding: 0;
+        margin: -$padding;
+        display: inline-block;
+        li{
+            font-size: 2rem;
+            display: inline-block;
+            padding: $padding;
+            a{
+                color: $accentColor;
+
+            }
+        }
+    }
+    #links{
+        margin-left: auto !important;
+    }
+}

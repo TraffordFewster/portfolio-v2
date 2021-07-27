@@ -8,12 +8,12 @@
         content: "";
         position: absolute;
         width: 0%;
-        bottom: -5px;
+        bottom: -2px;
         height: 2px;
         margin: 5px 0 0;
         transition: left , right , width, opacity, color ;
         transition-timing-function: ease-in-out;
-        transition-duration: 500ms;
+        transition-duration: 200ms;
         opacity: 0;
         background: darken($accentColor,20);
     }
@@ -44,4 +44,8 @@
 .m-auto{
     display: block;
     margin: auto;
+}
+
+.addPadding{
+    padding: $padding;
 }

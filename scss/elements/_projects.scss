@@ -1,12 +1,57 @@
 #projects{
     display: flex;
     flex-wrap: wrap;
-    margin: $padding;
+    margin: $padding * 2;
     article{
+        display: block;
         flex: 1;
         min-width: 25%;
-        margin: $padding;
-        height: 400px;
-        background: red;
+        max-width: 100%;
+        margin: $padding * 2;
+        height: 380px;
+        background: $sideMenuBackground;
+        border-radius: $padding;
+        border: 2px solid $accentColor;
+        box-shadow: 1px 1px 5px 1px $accentColor;
+        position: relative;
+        overflow: hidden;
+        color: $textBase;
+        transition: transform 200ms;
+        h4{
+            display: block;
+            padding: $padding;
+            margin: 0;
+        }
+        button {
+            position: absolute;
+            bottom: $padding;
+            left: $padding;
+            background: #00000000;
+            border: none;
+            outline: none;
+            padding: $padding;
+            border-radius: $padding;
+            border: solid 2px $accentColor;
+            color: $textBase;
+            transition: background-color 200ms, color 200ms;
+        }
+        &:hover{
+            cursor: pointer;
+            transform: scale(1.1);
+            z-index: 100;
+            button {
+                background: $accentColor;
+                color: $sideMenuBackground;
+            }
+        }
     }
+}
+
+.img{
+    width: 100%;
+    height: 300px;
+    overflow: hidden;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
 }
