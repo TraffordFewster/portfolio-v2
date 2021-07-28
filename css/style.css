@@ -1,6 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100;400;700&family=Righteous&display=swap");
 .titleFont {
-  font-family: 'Righteous', cursive; }
+  font-family: 'Righteous', cursive;
+  letter-spacing: 2px; }
 
 .coolHover {
   position: relative; }
@@ -156,6 +157,8 @@ header {
   overflow: hidden;
   position: relative;
   z-index: -1;
+  min-height: 20vh;
+  border-bottom: 2px solid #aee8ff;
   animation-name: MOVE-BG;
   animation-duration: 120s;
   animation-timing-function: linear;
@@ -349,3 +352,63 @@ header {
         color: #aee8ff; }
   #projectModalBackground #links {
     margin-left: auto !important; }
+
+.SCScontainer {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 8px; }
+
+.SCSChild {
+  min-width: 350px;
+  margin: 8px;
+  padding: 8px;
+  flex: 1;
+  background: #333333;
+  border-radius: 8px;
+  border: solid 2px #aee8ff;
+  box-shadow: 1px 1px 5px 1px #aee8ff; }
+  @media screen and (max-width: 750px) {
+    .SCSChild {
+      min-width: 60%; } }
+  .SCSChild h2 {
+    text-align: center;
+    color: #aee8ff;
+    font-size: 1.7rem; }
+  .SCSChild h4 {
+    margin: 0; }
+  .SCSChild a {
+    color: #aee8ff;
+    text-decoration: none; }
+  .SCSChild img {
+    max-width: 100%;
+    margin: auto; }
+
+.loader {
+  border: 4px solid #222222;
+  border-top: 4px solid #aee8ff;
+  border-radius: 50%;
+  width: 10px;
+  height: 10px;
+  animation: spin 2s linear infinite;
+  display: inline-block;
+  vertical-align: middle; }
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg); }
+  100% {
+    transform: rotate(360deg); } }
+
+#LanList {
+  text-align: center;
+  display: block;
+  list-style: none;
+  padding: 0;
+  margin: auto; }
+  #LanList li {
+    display: inline-block;
+    font-size: 3rem;
+    margin: 8px;
+    color: #aee8ff; }
+  #LanList a {
+    transition: color 200ms; }

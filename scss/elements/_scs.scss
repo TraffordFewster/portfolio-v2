@@ -1,0 +1,54 @@
+.SCScontainer{
+    display: flex;
+    flex-wrap: wrap;
+    padding: $padding;
+}
+.SCSChild{
+    min-width:350px;
+    @media screen and (max-width: $smallMax) {
+        min-width: 60%;
+    }
+    margin: $padding;
+    padding: $padding;
+    flex: 1;
+
+    background: $sideMenuBackground;
+    border-radius: $padding;
+    border: solid 2px $accentColor;
+    box-shadow: 1px 1px 5px 1px $accentColor;
+
+    h2{
+        text-align: center;
+        color: $accentColor;
+        font-size: 1.7rem;
+    }
+
+    h4{
+        margin: 0;
+    }
+
+    a{
+        color: $accentColor;
+        text-decoration: none;
+    }
+
+    img {
+        max-width: 100%;
+        margin: auto;
+    }
+}
+.loader {
+  border: 4px solid $baseBackground;
+  border-top: 4px solid $accentColor;
+  border-radius: 50%;
+  width: 10px;
+  height: 10px;
+  animation: spin 2s linear infinite;
+  display: inline-block;
+  vertical-align: middle;
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}

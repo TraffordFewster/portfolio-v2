@@ -5,6 +5,8 @@ header{
     overflow: hidden;
     position: relative;
     z-index: -1;
+    min-height: 20vh;
+    border-bottom: 2px solid $accentColor;
 
     animation-name: MOVE-BG;
     animation-duration: 120s;

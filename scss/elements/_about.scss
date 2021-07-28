@@ -1,0 +1,17 @@
+#LanList{
+    text-align: center;
+    display: block;
+    list-style: none;
+    padding: 0;
+    margin: auto;
+    li{
+        display: inline-block;
+        font-size: 3rem;
+        margin: $padding;
+        color: $accentColor;
+    }
+
+    a{
+        transition: color 200ms;
+    }
+}

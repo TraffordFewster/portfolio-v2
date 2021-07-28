@@ -20,12 +20,20 @@ var projectModalElements = {
   "link": document.getElementById("PMLink")
 };
 var langs = {
-  "HTML": '<li><i class="fab fa-html5"></i></li>',
-  "CSS": '<li><i class="fab fa-css3-alt"></i></li>',
-  "PHP": '<li><i class="fab fa-php"></i></li>',
-  "LARAVEL": '<li><i class="fab fa-laravel"></i></li>',
-  "SASS": '<li><i class="fab fa-sass"></i></li>',
-  "JS": '<li><i class="fab fa-js-square"></i></li>'
+  "HTML": '<li><i class="devicon-html5-plain"></i></li>',
+  "CSS": '<li><i class="devicon-css3-plain"></i></li>',
+  "PHP": '<li><i class="devicon-php-plain"></i></li>',
+  "LARAVEL": '<li><i class="devicon-laravel-plain-wordmark"></i></li>',
+  "SASS": '<li><i class="devicon-sass-original"></i></li>',
+  "JS": '<li><i class="devicon-javascript-plain"></i></li>',
+  "GULP": '<li><i class="devicon-gulp-plain"></i></li>',
+  "C#": '<li><i class="devicon-csharp-plain"></i></li>',
+  "SQL": '<li><i class="devicon-mysql-plain"></i></li>',
+  "COMPOSER": '<li><i class="devicon-composer-line"></i></li>' // "" : '<li></li>',
+  // "" : '<li></li>',
+  // "" : '<li></li>',
+  // "" : '<li></li>',
+
 };
 
 var projectModal = function projectModal(project) {
