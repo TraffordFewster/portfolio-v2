@@ -6,6 +6,13 @@
         display: block;
         flex: 1;
         min-width: 25%;
+        @media screen and (max-width: $largeMax){
+            min-width: 40%;
+        }
+
+        @media screen and (max-width: $smallMax){
+            min-width: 60%;
+        }
         max-width: 100%;
         margin: $padding * 2;
         height: 380px;

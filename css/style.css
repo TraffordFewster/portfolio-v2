@@ -54,7 +54,8 @@ body {
   background-color: #333333;
   display: flex;
   flex-direction: column;
-  border-right: solid 2px #aee8ff; }
+  border-right: solid 2px #aee8ff;
+  overflow-x: visible; }
   #sideMenu #initials {
     color: #aee8ff;
     text-align: center;
@@ -91,19 +92,70 @@ body {
     #sideMenu #socialMediaList li {
       display: inline-block;
       font-size: 1.5rem; }
+  #sideMenu #sideMenuToggle {
+    display: none; }
+  @media screen and (max-width: 1000px) {
+    #sideMenu {
+      left: -200px;
+      transition: left 200ms; }
+      #sideMenu #sideMenuToggle {
+        display: block;
+        position: absolute;
+        top: 0px;
+        right: -50px;
+        width: 50px;
+        height: 50px;
+        z-index: 1000;
+        background: #333333;
+        border: #aee8ff solid 2px;
+        border-top: none;
+        border-left: none;
+        font-size: 2rem;
+        color: #aee8ff; }
+        #sideMenu #sideMenuToggle .stage1 {
+          display: inline; }
+        #sideMenu #sideMenuToggle .stage2 {
+          display: none; }
+        #sideMenu #sideMenuToggle .stage3 {
+          display: none; }
+        #sideMenu #sideMenuToggle:hover {
+          cursor: pointer; }
+          #sideMenu #sideMenuToggle:hover .stage1 {
+            display: none; }
+          #sideMenu #sideMenuToggle:hover .stage2 {
+            display: none; }
+          #sideMenu #sideMenuToggle:hover .stage3 {
+            display: inline; } }
+
+@media screen and (max-width: 1000px) {
+  .sideExpanded {
+    left: 0 !important; }
+    .sideExpanded #sideMenuToggle .stage1 {
+      display: none !important; }
+    .sideExpanded #sideMenuToggle .stage2 {
+      display: inline !important; }
+    .sideExpanded #sideMenuToggle .stage3 {
+      display: none !important; } }
 
 main {
   width: calc(100% - 200px);
   display: block;
-  transform: translateX(200px);
-  overflow: hidden; }
+  overflow: hidden;
+  position: absolute;
+  left: 200px;
+  z-index: -1; }
+  @media screen and (max-width: 1000px) {
+    main {
+      left: 0;
+      width: 100%; } }
 
 header {
   background-image: url(/img/headerbg.jpg);
   background-repeat: no-repeat;
-  background-size: 200%;
+  background-size: cover;
   overflow: hidden;
   position: relative;
+  z-index: -1;
   animation-name: MOVE-BG;
   animation-duration: 120s;
   animation-timing-function: linear;
@@ -154,6 +206,12 @@ header {
     overflow: hidden;
     color: #c5c5c5;
     transition: transform 200ms; }
+    @media screen and (max-width: 1250px) {
+      #projects article {
+        min-width: 40%; } }
+    @media screen and (max-width: 750px) {
+      #projects article {
+        min-width: 60%; } }
     #projects article h4 {
       display: block;
       padding: 8px;

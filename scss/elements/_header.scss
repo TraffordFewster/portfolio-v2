@@ -1,9 +1,10 @@
 header{
     background-image: url(/img/headerbg.jpg);
     background-repeat: no-repeat;
-    background-size: 200%;
+    background-size: cover;
     overflow: hidden;
     position: relative;
+    z-index: -1;
 
     animation-name: MOVE-BG;
     animation-duration: 120s;

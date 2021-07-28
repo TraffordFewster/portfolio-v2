@@ -1,7 +1,14 @@
 main{
     width: calc(100% - #{$sideMenuWidth});
     display: block;
-    transform: translateX($sideMenuWidth);
+    // transform: translateX($sideMenuWidth);
     overflow: hidden;
-    
+    position: absolute;
+    left: $sideMenuWidth;
+    z-index: -1;
+
+    @media screen and (max-width : $medMax) {
+        left: 0;
+        width: 100%;
+    }
 }
