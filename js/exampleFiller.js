@@ -1,0 +1,93 @@
+const projectModalElements = {
+    "codeBlock" : document.getElementById("PMCode"),
+    "title" : document.getElementById("PMTitle"),
+    "desc" : document.getElementById("PMDescription"),
+    "languages" : document.getElementById("PMLanguages"),
+    "git" : document.getElementById("PMGit"),
+    "link" : document.getElementById("PMLink")
+}
+
+const langs = {
+    "html" : '<li><i class="devicon-html5-plain"></i></li>',
+    "css" : '<li><i class="devicon-css3-plain"></i></li>',
+    "php" : '<li><i class="devicon-php-plain"></i></li>',
+    "scss" : '<li><i class="devicon-sass-original"></i></li>',
+    "javascript" : '<li><i class="devicon-javascript-plain"></i></li>',
+    "c#" : '<li><i class="devicon-csharp-plain"></i></li>',
+    "sql" : '<li><i class="devicon-mysql-plain"></i></li>',
+}
+
+var projectModal = project => {
+    projectModalElements.title.innerText = project.title;
+    projectModalElements.codeBlock.innerHTML = project.code;
+    projectModalElements.codeBlock.className = `language-${project.language}`
+    projectModalElements.desc.innerText = project.description;
+    if (project.git) {
+        projectModalElements.git.style.display = null;
+        projectModalElements.git.href = project.git;
+    } else {
+        projectModalElements.git.style.display = "none";
+    }
+
+    if (project.link) {
+        projectModalElements.link.style.display = null;
+        projectModalElements.link.href = project.link;
+    } else {
+        projectModalElements.link.style.display = "none";
+    }
+
+
+    let langHTML = ""
+    if (langs[project.language])
+    {
+        langHTML += langs[project.language];
+    }
+    projectModalElements.languages.innerHTML = langHTML;
+
+    document.getElementById("projectModalBackground").style.display = "block"
+    Prism.highlightAll()
+}
+
+document.getElementById("projectModalBackground").onclick = e => {
+    if (e.target === document.getElementById("projectModalBackground")) {
+        document.getElementById("projectModalBackground").style.display = "none";
+    }
+}
+
+var setupExamples = projectsArray => {
+    for (let i = 0; i < projectsArray.length; i++)
+    {
+        let project =  projectsArray[i];
+        let xhttp = new XMLHttpRequest();
+        xhttp.onreadystatechange = function() {
+            if (this.readyState == 4 && this.status == 200) {
+                let project = projectsArray[i]
+                project.code = xhttp.responseText
+                let projHTML = `
+                    <pre><code class="language-${project.language}">${project.code}</code></pre>
+                    <h3>${project.title}</h3>
+                    <button>Details <i class="fas fa-arrow-right" aria-hidden="true"></i></button>
+                `
+                let element = document.getElementById(`e${i}`);
+                element.innerHTML = projHTML;
+                element.onclick = () => {
+                    projectModal(project)
+                }
+                Prism.highlightAll()
+            }
+        };
+        xhttp.open("GET", `${project.code}`, true);
+        xhttp.send();
+
+    }
+}
+
+var xhttp = new XMLHttpRequest();
+xhttp.onreadystatechange = function() {
+    if (this.readyState == 4 && this.status == 200) {
+       let data = JSON.parse(xhttp.responseText).codeExamples
+       setupExamples(data);
+    }
+};
+xhttp.open("GET", "/projects.json", true);
+xhttp.send();
