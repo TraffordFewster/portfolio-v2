@@ -94,7 +94,7 @@
             "title":"Placeholder",
             "description":"lorem ipsum",
             "code":"code/placeholder.txt",
-            "language":"scss",
+            "language":"lua",
             "git":"https://github.com",
             "link":"https://example.com"
         },
@@ -102,7 +102,7 @@
             "title":"Placeholder",
             "description":"lorem ipsum",
             "code":"code/placeholder.txt",
-            "language":"scss",
+            "language":"lua",
             "git":"https://github.com",
             "link":"https://example.com"
         }

@@ -12,6 +12,8 @@
         left: 50%;
         width: 700px;
         max-width:90%;
+        //max-height: 80vh;
+        overflow: auto;
         height: auto;
         background: $sideMenuBackground;
         border-radius: $padding;
@@ -54,5 +56,10 @@
     }
     #links{
         margin-left: auto !important;
+    }
+
+    .addPadding{
+        max-height: 50vh;
+        overflow: auto;
     }
 }

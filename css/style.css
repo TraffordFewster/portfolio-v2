@@ -329,6 +329,7 @@ header {
     left: 50%;
     width: 700px;
     max-width: 90%;
+    overflow: auto;
     height: auto;
     background: #333333;
     border-radius: 8px;
@@ -360,6 +361,9 @@ header {
         color: #aee8ff; }
   #projectModalBackground #links {
     margin-left: auto !important; }
+  #projectModalBackground .addPadding {
+    max-height: 50vh;
+    overflow: auto; }
 
 .SCScontainer {
   display: flex;
