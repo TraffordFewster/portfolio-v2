@@ -27,6 +27,16 @@
     #flexHack{
         display: flex;
     }
+
+    a{
+        color: $accentColor;
+        text-decoration: none;
+        transition: color 200ms;
+        &:hover{
+            color: darken($color: $accentColor, $amount: 10);
+        }
+    }
+
     ul{
         list-style: none;
         padding: 0;

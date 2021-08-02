@@ -1,52 +1,52 @@
 {
     "projects":[
         {
-            "title":"Super Pog Project",
-            "description":"Amazing",
-            "img":"https://cdn.tmonkeyt.dev/i/n84we.png",
-            "link": "https://example.com",
-            "github": "https://github.com",
-            "languages": ["HTML","CSS","PHP","LARAVEL","SASS","JS"]
+            "title":"Remake the Netmatters Homepage",
+            "description":"The first project in the Netmatters <a class='coolHover' href='scs.html'>SCS</a> Scheme was to remake the netmatters Homepage. Throughout the course I was challenged to change the code to add different functionality, at first it was adding some javascript to add some functionality to the site and then later in the course I was challenged with adding a new page for a contact form that stored the results in a database.",
+            "img":"img/projects/netmatters-homepage.png",
+            "link": "https://netmatters.trafford-fewster.netmatters-scs.co.uk/",
+            "github": "https://github.com/TraffordFewster/HTML---CSS-Reflection/tree/addPHP",
+            "languages": ["HTML","CSS","SASS","JS","GULP","PHP","SQL"]
         },
         {
-            "title":"Extra Loooooooooooooooooong title",
-            "description":"lorem ipsum",
-            "img":"/img/projects/placeholder.png",
-            "link": null,
-            "github": null,
-            "languages": ["HTML","CSS","PHP","LARAVEL","SASS","JS"]
+            "title":"Javascript Image Assigner",
+            "description":"After learning javascript in the Netmatters <a class='coolHover' href='scs.html'>SCS</a> scheme I was challenged with making a basic image assigner with OO Javascript. The goal of the site was to fetch an image from an API which would then display to the screen and be possible to assign to a validated email address.",
+            "img":"img/projects/js-reflection.png",
+            "link": "https://github-projects.trafford.dev/jsReflection/",
+            "github": "https://github.com/TraffordFewster/jsReflection",
+            "languages": ["HTML","CSS","SASS","JS","GULP"]
         },
         {
-            "title":"Placeholder",
-            "description":"lorem ipsum",
-            "img":"/img/projects/placeholder.png",
-            "link": null,
-            "github": null,
-            "languages": ["HTML","CSS","PHP","LARAVEL","SASS","JS"]
-        },
-        {
-            "title":"Placeholder",
-            "description":"lorem ipsum",
-            "img":"/img/projects/placeholder.png",
-            "link": null,
-            "github": null,
-            "languages": ["HTML","CSS","PHP","LARAVEL","SASS","JS"]
+            "title":"Laravel Company Portal",
+            "description":"After learning Laravel in the Netmatters <a class='coolHover' href='scs.html'>SCS</a> scheme I was challenged with making a company portal with full <a class='coolHover' href='https://en.wikipedia.org/wiki/Create,_read,_update_and_delete'>CRUD</a> functionality for companies and employees. This is what I would determine my first full project with a working project at the end I had some trouble but overall really enjoyed laravel. All the styling was done with <a class='coolHover' href='https://getbootstrap.com/'>Bootstrap.</a><br>If you want to use the below linked version to test it the login is:<br>admin@admin.com<br>password",
+            "img":"img/projects/laravel-reflection.png",
+            "link": "https://laravel-reflection.trafford.dev/",
+            "github": "https://github.com/TraffordFewster/laravel-reflection",
+            "languages": ["HTML","BOOTSTRAP","PHP","COMPOSER","LARAVEL"]
         },
         {
             "title":"Placeholder",
             "description":"lorem ipsum",
-            "img":"/img/projects/placeholder.png",
+            "img":"img/projects/placeholder.png",
             "link": null,
             "github": null,
-            "languages": ["HTML","CSS","PHP","LARAVEL","SASS","JS"]
+            "languages": ["HTML"]
         },
         {
             "title":"Placeholder",
             "description":"lorem ipsum",
-            "img":"/img/projects/placeholder.png",
+            "img":"img/projects/placeholder.png",
             "link": null,
             "github": null,
-            "languages": ["HTML","CSS","PHP","LARAVEL","SASS","JS"]
+            "languages": ["HTML"]
+        },
+        {
+            "title":"Placeholder",
+            "description":"lorem ipsum",
+            "img":"img/projects/placeholder.png",
+            "link": null,
+            "github": null,
+            "languages": ["HTML"]
         }
     ],
 
@@ -59,36 +59,36 @@
     
     "codeExamples":[
         {
-            "title":"Placeholder",
-            "description":"lorem ipsum",
-            "code":"code/placeholder.txt",
+            "title":"Greyscale images",
+            "description":"One of the main issues I had with remaking the Netmatters homepage was creating the hover effect of going from greyscale to colored on internet explorer. Because internet explorer doesn't support the needed filters that I was planning on using originally I had to use two seperate images and swap them in and out.",
+            "code":"code/greyimage.txt",
             "language":"scss",
-            "git":"https://github.com",
-            "link":"https://example.com"
+            "git":"https://github.com/TraffordFewster/HTML---CSS-Reflection/blob/master/scss/content/_awards.scss#L4",
+            "link":"https://netmatters.trafford-fewster.netmatters-scs.co.uk/"
         },
         {
-            "title":"Placeholder",
-            "description":"lorem ipsum",
-            "code":"code/placeholder.txt",
-            "language":"scss",
-            "git":"https://github.com",
-            "link":"https://example.com"
+            "title":"Javascript dynamic drop down.",
+            "description":"With the javascript reflection I wanted to put the assigned images in containers and have them collapsable, I thought this would be a simple task but I also wanted it to have a smooth animation for opening and closing, this wasn't to simple as you can't animate auto heights in CSS. I ended up having to use javascript to measure the height being set by auto then setting the number so CSS could handle the animation.",
+            "code":"code/jsdropdown.txt",
+            "language":"javascript",
+            "git":"https://github.com/TraffordFewster/jsReflection/blob/master/js/app.js#L176",
+            "link":"https://github-projects.trafford.dev/jsReflection/"
         },
         {
-            "title":"Placeholder",
-            "description":"lorem ipsum",
-            "code":"code/placeholder.txt",
-            "language":"scss",
-            "git":"https://github.com",
-            "link":"https://example.com"
+            "title":"SQL Example",
+            "description":"This is just an example of an advanced SQL query, the goal of the query was to select all employee's who were hired before their manager and return a formatted result.<br><a class='coolHover' href='code/sql_pre.html'>SQL Table</a><br><a class='coolHover' href='code/sql_post.html'>SQL Results</a>",
+            "code":"code/sql.txt",
+            "language":"sql",
+            "git":null,
+            "link":null
         },
         {
-            "title":"Placeholder",
-            "description":"lorem ipsum",
-            "code":"code/placeholder.txt",
-            "language":"scss",
-            "git":"https://github.com",
-            "link":"https://example.com"
+            "title":"Laravel Company Management index",
+            "description":"As part of my Laravel Company management project, the index page of companies displays all the companies and I also wanted to have the option to be able to order them and that is what this completes.",
+            "code":"code/company-management.txt",
+            "language":"php",
+            "git":"https://github.com/TraffordFewster/laravel-reflection/blob/master/app/Http/Controllers/CompanyController.php#L32",
+            "link":null
         },
         {
             "title":"Placeholder",

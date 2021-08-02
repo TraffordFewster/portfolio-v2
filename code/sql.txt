@@ -1,0 +1,16 @@
+SELECT Concat(first_name, ' ', last_name)     AS NAME,
+       hire_date,
+       employee_id,
+       manager_id,
+       (SELECT Concat(first_name, ' ', last_name)
+        FROM   employees AS ee
+        WHERE  ee.employee_id = e.manager_id) manager_name,
+       (SELECT hire_date
+        FROM   employees AS ee
+        WHERE  ee.employee_id = e.manager_id) manager_hire_date
+FROM   employees AS e
+WHERE  employee_id IN (SELECT e.employee_id
+                       FROM   employees AS ee
+                       WHERE  ee.employee_id = e.manager_id
+                              AND e.hire_date < ee.hire_date)
+ORDER  BY manager_id; 

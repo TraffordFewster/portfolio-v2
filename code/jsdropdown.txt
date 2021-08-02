@@ -1,0 +1,25 @@
+$('.EmailBuckets').on('click', '.icons', (e) => {
+	let el = $(e.currentTarget.parentNode.parentNode);
+	let child = el.children('.imageHolderHolder');
+
+	el.toggleClass('expanded');
+	if (el.hasClass('expanded')) {
+		child.css('height', 'auto'); // Set height to auto so we can grab the height
+		let h = child.height(); // Get auto height
+		child.css('height', 0); // Set back to 0 for the transition
+		setTimeout(() => {
+			// Timeout cos css is weird
+			child.css('height', h); // set height
+
+			setTimeout(() => {
+				child.css('height', 'auto'); // set back to auto so if new lines are added it will still expand
+			}, 500);
+		}, 100);
+	} else {
+		let h = child.height();
+		child.css('height', h);
+		setTimeout(() => {
+			child.css('height', 0);
+		}, 100);
+	}
+});

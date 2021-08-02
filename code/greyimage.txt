@@ -1,0 +1,14 @@
+.greyImage{
+    & > img:last-of-type{
+        display: none;
+    }
+
+    &:hover{
+        & > img:first-of-type{
+            display: none;
+        }
+        & > img:last-of-type{
+            display: block;
+        }
+    }
+}

@@ -22,7 +22,7 @@ var projectModal = function projectModal(project) {
   projectModalElements.title.innerText = project.title;
   projectModalElements.codeBlock.innerHTML = project.code;
   projectModalElements.codeBlock.className = "language-".concat(project.language);
-  projectModalElements.desc.innerText = project.description;
+  projectModalElements.desc.innerHTML = project.description;
 
   if (project.git) {
     projectModalElements.git.style.display = null;

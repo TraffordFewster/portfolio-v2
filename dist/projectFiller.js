@@ -29,8 +29,8 @@ var langs = {
   "GULP": '<li><i class="devicon-gulp-plain"></i></li>',
   "C#": '<li><i class="devicon-csharp-plain"></i></li>',
   "SQL": '<li><i class="devicon-mysql-plain"></i></li>',
-  "COMPOSER": '<li><i class="devicon-composer-line"></i></li>' // "" : '<li></li>',
-  // "" : '<li></li>',
+  "COMPOSER": '<li><i class="devicon-composer-line"></i></li>',
+  "BOOTSTRAP": '<li><i class="devicon-bootstrap-plain"></i></li>' // "" : '<li></li>',
   // "" : '<li></li>',
   // "" : '<li></li>',
 
@@ -39,7 +39,7 @@ var langs = {
 var projectModal = function projectModal(project) {
   projectModalElements.title.innerText = project.title;
   projectModalElements.image.style.backgroundImage = "url(".concat(project.img, ")");
-  projectModalElements.desc.innerText = project.description;
+  projectModalElements.desc.innerHTML = project.description;
 
   if (project.github) {
     projectModalElements.git.style.display = null;
