@@ -9,13 +9,13 @@ var projectModalElements = {
   "link": document.getElementById("PMLink")
 };
 var langs = {
-  "html": '<li><i class="devicon-html5-plain"></i></li>',
-  "css": '<li><i class="devicon-css3-plain"></i></li>',
-  "php": '<li><i class="devicon-php-plain"></i></li>',
-  "scss": '<li><i class="devicon-sass-original"></i></li>',
-  "javascript": '<li><i class="devicon-javascript-plain"></i></li>',
-  "c#": '<li><i class="devicon-csharp-plain"></i></li>',
-  "sql": '<li><i class="devicon-mysql-plain"></i></li>'
+  "html": '<li title="HTML5"><i class="devicon-html5-plain"></i></li>',
+  "css": '<li title="CSS3"><i class="devicon-css3-plain"></i></li>',
+  "php": '<li title="PHP"><i class="devicon-php-plain"></i></li>',
+  "scss": '<li title="Sass"><i class="devicon-sass-original"></i></li>',
+  "javascript": '<li title="Javascript"><i class="devicon-javascript-plain"></i></li>',
+  "c#": '<li title="C#"><i class="devicon-csharp-plain"></i></li>',
+  "sql": '<li title="SQL"><i class="devicon-mysql-plain"></i></li>'
 };
 
 var projectModal = function projectModal(project) {

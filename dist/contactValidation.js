@@ -40,3 +40,16 @@ var validateContactForm = function validateContactForm() {
 
   return !hasErrored;
 };
+
+var _loop = function _loop(k) {
+  var ele = elements[k]["ele"];
+  ele.addEventListener('change', function (event) {
+    if (ele.classList.contains("errored")) {
+      ele.classList.remove("errored");
+    }
+  });
+};
+
+for (var k = 0; k < elements.length; k++) {
+  _loop(k);
+}

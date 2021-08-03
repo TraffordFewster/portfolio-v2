@@ -42,3 +42,11 @@ var validateContactForm = () => {
     }
     return !hasErrored
 }
+
+for (let k = 0; k < elements.length; k++)
+{
+    let ele = elements[k]["ele"];
+    ele.addEventListener('change', (event) => {
+        if (ele.classList.contains("errored")) {ele.classList.remove("errored")}
+    });
+}
