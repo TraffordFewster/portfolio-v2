@@ -33,7 +33,7 @@
             position: absolute;
             bottom: $padding;
             left: $padding;
-            background: #00000000;
+            background: rgba(0, 0, 0, 0);
             border: none;
             outline: none;
             padding: $padding;
@@ -47,7 +47,7 @@
         }
         &:hover{
             cursor: pointer;
-            transform: scale(1.1);
+            transform: scale(1.05);
             z-index: 100;
             button {
                 background: $accentColor;

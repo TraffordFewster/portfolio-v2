@@ -40,6 +40,12 @@
             opacity: 1;
         }
     }
+
+   @media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
+        &::before,&::after{
+            content: none;
+        }
+    }
 }
 
 .m-auto{

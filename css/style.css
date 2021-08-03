@@ -31,6 +31,9 @@
       right: 0%;
       width: 50%;
       opacity: 1; }
+  @media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
+    .coolHover::before, .coolHover::after {
+      content: none; } }
 
 .m-auto {
   display: block;
@@ -223,7 +226,7 @@ header {
       position: absolute;
       bottom: 8px;
       left: 8px;
-      background: #00000000;
+      background: rgba(0, 0, 0, 0);
       border: none;
       outline: none;
       padding: 8px;
@@ -235,7 +238,7 @@ header {
         cursor: pointer; }
     #projects article:hover {
       cursor: pointer;
-      transform: scale(1.1);
+      transform: scale(1.05);
       z-index: 100; }
       #projects article:hover button {
         background: #aee8ff;
@@ -251,7 +254,8 @@ header {
 
 #contact {
   margin: 16px;
-  display: flex; }
+  display: flex;
+  flex-wrap: wrap; }
   #contact h4, #contact h5, #contact p {
     margin: 0; }
   #contact p {
@@ -259,6 +263,11 @@ header {
   #contact #contactDetails {
     width: 250px;
     color: #95e1ff; }
+    @media screen and (max-width: 750px) {
+      #contact #contactDetails {
+        min-width: 80%;
+        text-align: center;
+        margin: auto; } }
     #contact #contactDetails h4 {
       font-size: 1.3rem; }
     #contact #contactDetails a {
@@ -270,16 +279,27 @@ header {
         color: #95e1ff; }
   #contact #contactForm {
     flex: 1; }
+    @media screen and (max-width: 750px) {
+      #contact #contactForm {
+        min-width: 60%;
+        margin-left: -16px; } }
     #contact #contactForm fieldset {
       border: none;
       display: flex;
       margin-right: 8px;
       padding: 16px;
       padding-top: 0;
-      padding-bottom: 8px; }
+      padding-bottom: 8px;
+      flex-wrap: wrap; }
     #contact #contactForm div {
       flex: 1;
       position: relative; }
+      @media screen and (max-width: 750px) {
+        #contact #contactForm div {
+          min-width: 60%; } }
+    @media screen and (max-width: 750px) {
+      #contact #contactForm .ml, #contact #contactForm .mr {
+        margin: 0 !important; } }
     #contact #contactForm input, #contact #contactForm textarea {
       padding: 8px;
       width: 100%;
@@ -434,12 +454,18 @@ header {
     flex: 1;
     background: #333333;
     margin: 16px;
-    min-width: 26%;
+    min-width: 25%;
     border-radius: 8px;
     border: 2px solid #aee8ff;
     box-shadow: 1px 1px 5px 1px #aee8ff;
     overflow: hidden;
     transition: transform 200ms; }
+    @media screen and (max-width: 1250px) {
+      #examples article {
+        min-width: 40%; } }
+    @media screen and (max-width: 750px) {
+      #examples article {
+        min-width: 60%; } }
     #examples article pre {
       margin-top: 0;
       height: 400px;
@@ -449,7 +475,7 @@ header {
       margin-left: 8px; }
     #examples article button {
       margin: 8px 0 8px 8px;
-      background: #00000000;
+      background: rgba(0, 0, 0, 0);
       border: none;
       outline: none;
       padding: 8px;
@@ -461,7 +487,7 @@ header {
         cursor: pointer; }
     #examples article:hover {
       cursor: pointer;
-      transform: scale(1.1);
+      transform: scale(1.05);
       z-index: 10000000000; }
       #examples article:hover button {
         background: #aee8ff;

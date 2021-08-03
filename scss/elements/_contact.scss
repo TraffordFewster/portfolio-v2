@@ -7,8 +7,14 @@
     }
     margin: $padding*2;
     display: flex;
+    flex-wrap: wrap;
     #contactDetails{
         
+        @media screen and (max-width: $smallMax){
+            min-width: 80%;
+            text-align: center;
+            margin: auto;
+        }
         width: 250px;
         color: darken($color: $accentColor, $amount: 5);
         h4{
@@ -28,19 +34,33 @@
     }
 
     #contactForm{
+        @media screen and (max-width: $smallMax){
+            min-width: 60%;
+            margin-left: -$padding * 2;
+        }
         flex: 1;
         fieldset{
             border: none;
             display: flex;
             margin-right: $padding;
             padding: $padding * 2;
+
             padding-top: 0;
             padding-bottom: $padding;
-
+            flex-wrap: wrap;
         }
         div{
             flex: 1;
+            @media screen and (max-width: $smallMax){
+                min-width: 60%;
+            }
             position: relative;
+        }
+
+        .ml,.mr{
+            @media screen and (max-width: $smallMax){
+                margin: 0 !important;
+            }
         }
         input,textarea{
             padding: $padding;

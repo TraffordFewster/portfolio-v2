@@ -8,7 +8,14 @@
         flex: 1;
         background: $sideMenuBackground;
         margin: $padding * 2;
-        min-width: 26%;
+        min-width: 25%;
+        @media screen and (max-width: $largeMax){
+            min-width: 40%;
+        }
+
+        @media screen and (max-width: $smallMax){
+            min-width: 60%;
+        }
 
         border-radius: $padding;
         border: 2px solid $accentColor;
@@ -28,7 +35,7 @@
 
         button {
             margin: $padding 0 $padding $padding;
-            background: #00000000;
+            background: rgba(0, 0, 0, 0);
             border: none;
             outline: none;
             padding: $padding;
@@ -43,7 +50,7 @@
 
         &:hover{
             cursor: pointer;
-            transform: scale(1.1);
+            transform: scale(1.05);
             z-index: 10000000000;
             button {
                 background: $accentColor;
