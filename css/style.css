@@ -130,6 +130,16 @@ body {
             display: none; }
           #sideMenu #sideMenuToggle:hover .stage3 {
             display: inline; } }
+  @media screen and (max-height: 550px) {
+    #sideMenu hr {
+      margin: -1px 0 !important; } }
+  @media screen and (max-height: 450px) {
+    #sideMenu hr:first-of-type {
+      display: none; }
+    #sideMenu #initials {
+      display: none; }
+    #sideMenu ul {
+      margin: 4px; } }
 
 @media screen and (max-width: 1000px) {
   .sideExpanded {
@@ -147,7 +157,8 @@ main {
   overflow: hidden;
   position: absolute;
   left: 200px;
-  z-index: -1; }
+  z-index: -1;
+  padding-bottom: 16px; }
   @media screen and (max-width: 1000px) {
     main {
       left: 0;

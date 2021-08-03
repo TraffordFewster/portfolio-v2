@@ -85,6 +85,27 @@
             }
         } 
     }
+
+    @media screen and (max-height: $hMedMax){
+        hr {
+            margin: -1px 0 !important;
+        }
+    }
+
+    @media screen and (max-height: $hSmallMax){
+
+        hr:first-of-type{
+            display: none;
+        }
+
+         #initials{
+             display: none;
+         }
+         
+         ul {
+             margin: $padding / 2;
+         }
+    }
 }
 
 .sideExpanded{
