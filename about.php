@@ -1,69 +1,12 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Trafford's Portfolio</title>
-    <link rel="stylesheet" href="dist/style.css">
-    <script src="https://kit.fontawesome.com/ebb02e5adb.js" crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.12.0/devicon.min.css">
-
-    <script src="dist/animateTyping.js" defer></script>
-    </head>
+    <?php include "includes/head.php"; ?>
+</head>
 <body>
 
-    <nav id="sideMenu" class="">
-        <div id="initials"><a href="/" class="titleFont">T</a></div>
-        <hr>
-        <ul>
-            <li><a href="about.html" class="coolHover">About Me</a></li>
-            <li><a href="index.html#projects" class="coolHover">My Portfolio</a></li>
-            <li><a href="examples.html" class="coolHover">Coding Examples</a></li>
-            <li><a href="scs.html" class="coolHover">SCS Scheme</a></li>
-        </ul>
-        <hr>
-        <div style="margin: auto; flex: 1;"></div>
-        <hr>
-        <ul>
-            <li><a href="index.html#contactForm" class="coolHover">Contact Me</a></li>
-        </ul>
-        <hr>
-        <ul id="socialMediaList">
-            <li><a target="_blank" href="https://github.com/TraffordFewster"><i class="fab fa-github-square"></i></a></li>
-            <li><a target="_blank" href="https://www.linkedin.com/in/trafford-fewster/"><i class="fab fa-linkedin"></i></a></li>
-        </ul>
-        <button id="sideMenuToggle">
-            <span class="titleFont stage1">T</span>
-            <span class="titleFont stage2">&#60;&#60;</span>
-            <span class="titleFont stage3">&#62;&#62;</span>
-        </button>
-    </nav>
+    <?php include "includes/sideMenu.php"; ?>
 
-    <script>
-        function isDescendant(parent, child) {
-            var node = child.parentNode;
-            if (parent === child) return true;
-            while (node != null) {
-                if (node == parent) {
-                    return true;
-                }
-                node = node.parentNode;
-            }
-            return false;
-        }
-
-        document.getElementById("sideMenuToggle").onclick = function(){
-            document.getElementById("sideMenu").classList.toggle("sideExpanded")
-        }
-
-        document.onclick = function(event) {
-            if (document.getElementById("sideMenu").classList.contains("sideExpanded") && !isDescendant(document.getElementById("sideMenu"), event.target) ) {
-                console.log("HEY")
-                document.getElementById("sideMenu").classList.remove("sideExpanded")
-            }
-        }
-    </script>
     <main>
         <header>
             <div id="titleHolder">
@@ -78,7 +21,7 @@
                 <p>When I was growing up I really enjoyed computers and games, so much so that I ended up making a server for the game <a class="coolHover" href="https://gmod.facepunch.com/">Garry's Mod</a> that became very successful holding upto 100 people at a time. Running my server sparked an interest in coding as we needed custom content, so I taught myself some LUA with the help of multiple youtube videos such has <a class="coolHover" href="https://www.youtube.com/watch?v=c1mQ3mpdiJU&list=PLyQg3m0a5UivaAXEfVDngKYp9jyNSTIo_">&#60;CODE BLUE&#62;'s</a> tutorials on youtube.</p>
 
                 <p>
-                    While the server did have a good run all things come to an end and after about two years we started losing players and money with this I needed to find a new career so I found the <a href="scs.html" class="coolHover">Netmatters SCS Scheme</a> and was luckliy accepted and started working towards a career in Web development.
+                    While the server did have a good run all things come to an end and after about two years we started losing players and money with this I needed to find a new career so I found the <a href="scs.php" class="coolHover">Netmatters SCS Scheme</a> and was luckliy accepted and started working towards a career in Web development.
                 </p>
             </div>
 
