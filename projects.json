@@ -2,7 +2,7 @@
     "projects":[
         {
             "title":"Remake the Netmatters Homepage",
-            "description":"The first project in the Netmatters <a class='coolHover' href='scs.php'>SCS</a> Scheme was to remake the netmatters Homepage. Throughout the course I was challenged to change the code to add different functionality, at first it was adding some javascript to add some functionality to the site and then later in the course I was challenged with adding a new page for a contact form that stored the results in a database.",
+            "description":"The first project in the Netmatters <a class='coolHover' href='scs.html'>SCS</a> Scheme was to remake the netmatters Homepage. Throughout the course I was challenged to change the code to add different functionality, at first it was adding some javascript to add some functionality to the site and then later in the course I was challenged with adding a new page for a contact form that stored the results in a database.",
             "img":"img/projects/netmatters-homepage.png",
             "link": "https://netmatters.trafford-fewster.netmatters-scs.co.uk/",
             "github": "https://github.com/TraffordFewster/HTML---CSS-Reflection/tree/addPHP",
@@ -10,7 +10,7 @@
         },
         {
             "title":"Javascript Image Assigner",
-            "description":"After learning javascript in the Netmatters <a class='coolHover' href='scs.php'>SCS</a> scheme I was challenged with making a basic image assigner with OO Javascript. The goal of the site was to fetch an image from an API which would then display to the screen and be possible to assign to a validated email address.",
+            "description":"After learning javascript in the Netmatters <a class='coolHover' href='scs.html'>SCS</a> scheme I was challenged with making a basic image assigner with OO Javascript. The goal of the site was to fetch an image from an API which would then display to the screen and be possible to assign to a validated email address.",
             "img":"img/projects/js-reflection.png",
             "link": "https://github-projects.trafford.dev/jsReflection/",
             "github": "https://github.com/TraffordFewster/jsReflection",
@@ -18,7 +18,7 @@
         },
         {
             "title":"Laravel Company Portal",
-            "description":"After learning Laravel in the Netmatters <a class='coolHover' href='scs.php'>SCS</a> scheme I was challenged with making a company portal with full <a class='coolHover' href='https://en.wikipedia.org/wiki/Create,_read,_update_and_delete'>CRUD</a> functionality for companies and employees. This is what I would determine my first full project with a working project at the end I had some trouble but overall really enjoyed laravel. All the styling was done with <a class='coolHover' href='https://getbootstrap.com/'>Bootstrap.</a><br>If you want to use the below linked version to test it the login is:<br>admin@admin.com<br>password",
+            "description":"After learning Laravel in the Netmatters <a class='coolHover' href='scs.html'>SCS</a> scheme I was challenged with making a company portal with full <a class='coolHover' href='https://en.wikipedia.org/wiki/Create,_read,_update_and_delete'>CRUD</a> functionality for companies and employees. This is what I would determine my first full project with a working project at the end I had some trouble but overall really enjoyed laravel. All the styling was done with <a class='coolHover' href='https://getbootstrap.com/'>Bootstrap.</a><br>If you want to use the below linked version to test it the login is:<br>admin@admin.com<br>password",
             "img":"img/projects/laravel-reflection.png",
             "link": "https://laravel-reflection.trafford.dev/",
             "github": "https://github.com/TraffordFewster/laravel-reflection",
@@ -76,7 +76,7 @@
         },
         {
             "title":"SQL Example",
-            "description":"This is just an example of an advanced SQL query, the goal of the query was to select all employee's who were hired before their manager and return a formatted result.<br><a class='coolHover' href='code/sql_pre.php'>SQL Table</a><br><a class='coolHover' href='code/sql_post.php'>SQL Results</a>",
+            "description":"This is just an example of an advanced SQL query, the goal of the query was to select all employee's who were hired before their manager and return a formatted result.<br><a class='coolHover' href='code/sql_pre.html'>SQL Table</a><br><a class='coolHover' href='code/sql_post.html'>SQL Results</a>",
             "code":"code/sql.txt",
             "language":"sql",
             "git":null,

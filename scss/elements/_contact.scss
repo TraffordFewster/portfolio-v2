@@ -109,26 +109,3 @@
         }
     }
 }
-
-.successBox, .errorBox
-{
-    margin: $padding;
-    margin-left: $padding * 2;
-    border-radius: $padding;
-    padding: 0;
-    p {
-        padding: $padding / 2;
-        margin: 0 !important;
-    }
-}
-
-.errorBox {
-    background-color: $errorColor;
-    p:nth-child(2n) {
-        background-color: lighten($errorColor, 5);
-    }
-}
-
-.successBox {
-    background-color: $successColor;
-}

@@ -346,23 +346,6 @@ header {
         background: #aee8ff;
         cursor: pointer; }
 
-.successBox, .errorBox {
-  margin: 8px;
-  margin-left: 16px;
-  border-radius: 8px;
-  padding: 0; }
-  .successBox p, .errorBox p {
-    padding: 4px;
-    margin: 0 !important; }
-
-.errorBox {
-  background-color: #ad0000; }
-  .errorBox p:nth-child(2n) {
-    background-color: #c70000; }
-
-.successBox {
-  background-color: #1b5e00; }
-
 #projectModalBackground {
   position: fixed;
   width: 100%;
