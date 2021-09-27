@@ -7,4 +7,4 @@
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.12.0/devicon.min.css">
 
 <script src="dist/animateTyping.js" defer></script>
-<script src="dist/sideMenu.js"></script>
+<script src="dist/sideMenu.js" defer></script>

@@ -15,13 +15,20 @@ var langs = {
   "scss": '<li title="Sass"><i class="devicon-sass-original"></i></li>',
   "javascript": '<li title="Javascript"><i class="devicon-javascript-plain"></i></li>',
   "c#": '<li title="C#"><i class="devicon-csharp-plain"></i></li>',
-  "sql": '<li title="SQL"><i class="devicon-mysql-plain"></i></li>'
+  "sql": '<li title="SQL"><i class="devicon-mysql-plain"></i></li>',
+  "vue": '<li title="Vue.js"><i class="devicon-vuejs-plain"></i></li>'
 };
 
 var projectModal = function projectModal(project) {
+  var prismLang = project.language;
+
+  if (prismLang == "vue") {
+    prismLang = "js";
+  }
+
   projectModalElements.title.innerText = project.title;
   projectModalElements.codeBlock.innerHTML = project.code;
-  projectModalElements.codeBlock.className = "language-".concat(project.language);
+  projectModalElements.codeBlock.className = "language-".concat(prismLang);
   projectModalElements.desc.innerHTML = project.description;
 
   if (project.git) {
@@ -64,7 +71,13 @@ var setupExamples = function setupExamples(projectsArray) {
       if (this.readyState == 4 && this.status == 200) {
         var _project = projectsArray[i];
         _project.code = xhttp.responseText;
-        var projHTML = "\n                    <pre><code class=\"language-".concat(_project.language, "\">").concat(_project.code, "</code></pre>\n                    <h3>").concat(_project.title, "</h3>\n                    <button>Details <i class=\"fas fa-arrow-right\" aria-hidden=\"true\"></i></button>\n                ");
+        var prismLang = _project.language;
+
+        if (prismLang == "vue") {
+          prismLang = "js";
+        }
+
+        var projHTML = "\n                    <pre><code class=\"language-".concat(prismLang, "\">").concat(_project.code, "</code></pre>\n                    <h3>").concat(_project.title, "</h3>\n                    <button>Details <i class=\"fas fa-arrow-right\" aria-hidden=\"true\"></i></button>\n                ");
         var element = document.getElementById("e".concat(i));
         element.innerHTML = projHTML;
 

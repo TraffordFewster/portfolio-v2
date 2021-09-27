@@ -42,6 +42,7 @@
                     <li title="Laravel"><a class="coolHover" href="https://laravel.com/"><i class="devicon-laravel-plain-wordmark"></i></a></li>
                     <li title="C#"><a class="coolHover" href="https://docs.microsoft.com/en-us/dotnet/csharp/"><i class="devicon-csharp-plain"></i></a></li>
                     <li title="VSCode"><a class="coolHover" href="https://code.visualstudio.com/"><i class="devicon-vscode-plain"></i></a></li>
+                    <li title="Vue.js"><a class="coolHover" href="https://vuejs.org/"><i class="devicon-vuejs-plain"></i></a></li>
 
                     <!-- <li><a class="coolHover" href=""></a></li> -->
                     

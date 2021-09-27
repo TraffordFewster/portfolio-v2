@@ -15,12 +15,19 @@ const langs = {
     "javascript" : '<li title="Javascript"><i class="devicon-javascript-plain"></i></li>',
     "c#" : '<li title="C#"><i class="devicon-csharp-plain"></i></li>',
     "sql" : '<li title="SQL"><i class="devicon-mysql-plain"></i></li>',
+    "vue" : '<li title="Vue.js"><i class="devicon-vuejs-plain"></i></li>',
 }
 
 var projectModal = project => {
+
+    let prismLang = project.language;
+    if (prismLang == "vue"){
+        prismLang = "js";
+    } 
+
     projectModalElements.title.innerText = project.title;
     projectModalElements.codeBlock.innerHTML = project.code;
-    projectModalElements.codeBlock.className = `language-${project.language}`
+    projectModalElements.codeBlock.className = `language-${prismLang}`
     projectModalElements.desc.innerHTML = project.description;
     if (project.git) {
         projectModalElements.git.style.display = null;
@@ -63,8 +70,12 @@ var setupExamples = projectsArray => {
             if (this.readyState == 4 && this.status == 200) {
                 let project = projectsArray[i]
                 project.code = xhttp.responseText
+                let prismLang = project.language;
+                if (prismLang == "vue"){
+                    prismLang = "js";
+                } 
                 let projHTML = `
-                    <pre><code class="language-${project.language}">${project.code}</code></pre>
+                    <pre><code class="language-${prismLang}">${project.code}</code></pre>
                     <h3>${project.title}</h3>
                     <button>Details <i class="fas fa-arrow-right" aria-hidden="true"></i></button>
                 `

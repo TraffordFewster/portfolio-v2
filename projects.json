@@ -1,12 +1,20 @@
 {
     "projects":[
         {
+            "title":"Vue Quotebuilder",
+            "description":"In this project I had to make a quote builder in Vue with CRUD functionality for products and invoices. The project also needed to run a daily cron to generate a summary of the invoices created that day. I ended up using Vue, Bootstrap and Laravel to build out the project to a minimal viable product.",
+            "img":"img/projects/vue-reflection.png",
+            "link": null,
+            "github": "https://github.com/TraffordFewster/VueStore",
+            "languages": ["VUE","LARAVEL","BOOTSTRAP","GIT"]
+        },
+        {
             "title":"Remake the Netmatters Homepage",
             "description":"The first project in the Netmatters <a class='coolHover' href='scs.php'>SCS</a> Scheme was to remake the netmatters Homepage. Throughout the course I was challenged to change the code to add different functionality, at first it was adding some javascript to add some functionality to the site and then later in the course I was challenged with adding a new page for a contact form that stored the results in a database.",
             "img":"img/projects/netmatters-homepage.png",
             "link": "https://netmatters.trafford-fewster.netmatters-scs.co.uk/",
             "github": "https://github.com/TraffordFewster/HTML---CSS-Reflection/tree/addPHP",
-            "languages": ["HTML","CSS","SASS","JS","GULP","PHP","SQL"]
+            "languages": ["HTML","CSS","SASS","JS","GULP","PHP","SQL","GIT"]
         },
         {
             "title":"Javascript Image Assigner",
@@ -14,7 +22,7 @@
             "img":"img/projects/js-reflection.png",
             "link": "https://github-projects.trafford.dev/jsReflection/",
             "github": "https://github.com/TraffordFewster/jsReflection",
-            "languages": ["HTML","CSS","SASS","JS","GULP"]
+            "languages": ["HTML","CSS","SASS","JS","GULP","GIT"]
         },
         {
             "title":"Laravel Company Portal",
@@ -22,31 +30,7 @@
             "img":"img/projects/laravel-reflection.png",
             "link": "https://laravel-reflection.trafford.dev/",
             "github": "https://github.com/TraffordFewster/laravel-reflection",
-            "languages": ["HTML","BOOTSTRAP","PHP","COMPOSER","LARAVEL"]
-        },
-        {
-            "title":"Placeholder",
-            "description":"lorem ipsum",
-            "img":"img/projects/placeholder.png",
-            "link": null,
-            "github": null,
-            "languages": ["HTML"]
-        },
-        {
-            "title":"Placeholder",
-            "description":"lorem ipsum",
-            "img":"img/projects/placeholder.png",
-            "link": null,
-            "github": null,
-            "languages": ["HTML"]
-        },
-        {
-            "title":"Placeholder",
-            "description":"lorem ipsum",
-            "img":"img/projects/placeholder.png",
-            "link": null,
-            "github": null,
-            "languages": ["HTML"]
+            "languages": ["HTML","BOOTSTRAP","PHP","COMPOSER","LARAVEL","GIT"]
         }
     ],
 
@@ -58,6 +42,14 @@
 
     
     "codeExamples":[
+        {
+            "title":"Vue Confirm Box",
+            "description":"As part of my Vue quote builder I often needed a confirmation box so I made a reusable one with my pre-existing reusable modal which is based off the Bootstrap Modal.",
+            "code":"code/vue-confirm.txt",
+            "language":"vue",
+            "git":"https://github.com/TraffordFewster/VueStore/blob/master/resources/js/components/confirmBox.vue",
+            "link":null
+        },
         {
             "title":"Greyscale images",
             "description":"One of the main issues I had with remaking the Netmatters homepage was creating the hover effect of going from greyscale to colored on internet explorer. Because internet explorer doesn't support the needed filters that I was planning on using originally I had to use two seperate images and swap them in and out.",
@@ -89,22 +81,6 @@
             "language":"php",
             "git":"https://github.com/TraffordFewster/laravel-reflection/blob/master/app/Http/Controllers/CompanyController.php#L32",
             "link":null
-        },
-        {
-            "title":"Placeholder",
-            "description":"lorem ipsum",
-            "code":"code/placeholder.txt",
-            "language":"lua",
-            "git":"https://github.com",
-            "link":"https://example.com"
-        },
-        {
-            "title":"Placeholder",
-            "description":"lorem ipsum",
-            "code":"code/placeholder.txt",
-            "language":"lua",
-            "git":"https://github.com",
-            "link":"https://example.com"
         }
     ]
 

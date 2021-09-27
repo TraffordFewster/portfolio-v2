@@ -30,9 +30,9 @@ var langs = {
   "C#": '<li title="C#"><i class="devicon-csharp-plain"></i></li>',
   "SQL": '<li title="SQL"><i class="devicon-mysql-plain"></i></li>',
   "COMPOSER": '<li title="Composer"><i class="devicon-composer-line"></i></li>',
-  "BOOTSTRAP": '<li title="Bootstrap"><i class="devicon-bootstrap-plain"></i></li>' // "" : '<li></li>',
-  // "" : '<li></li>',
-  // "" : '<li></li>',
+  "BOOTSTRAP": '<li title="Bootstrap"><i class="devicon-bootstrap-plain"></i></li>',
+  "GIT": '<li><i class="devicon-git-plain"></i></li>',
+  "VUE": '<li><i class="devicon-vuejs-plain"></i></li>' // "" : '<li></li>',
 
 };
 
