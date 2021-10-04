@@ -16,7 +16,6 @@ document.getElementById("sideMenuToggle").onclick = function(){
 
 document.onclick = function(event) {
     if (document.getElementById("sideMenu").classList.contains("sideExpanded") && !isDescendant(document.getElementById("sideMenu"), event.target) ) {
-        console.log("HEY")
         document.getElementById("sideMenu").classList.remove("sideExpanded")
     }
 }

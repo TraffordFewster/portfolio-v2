@@ -70,7 +70,7 @@ var projectModal = function projectModal(project) {
 };
 
 document.getElementById("projectModalBackground").onclick = function (e) {
-  if (e.target === document.getElementById("projectModalBackground")) {
+  if (e.target === document.getElementById("projectModalBackground") || e.target === document.getElementById("modalCloseI")) {
     document.getElementById("projectModalBackground").style.display = "none";
   }
 };

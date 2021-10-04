@@ -369,14 +369,13 @@ header {
   height: 100vh;
   background: rgba(0, 0, 0, 0.314);
   z-index: 1000;
-  padding: 8px;
   overflow: hidden; }
   #projectModalBackground #projectModal {
     position: absolute;
     top: 50%;
     left: 50%;
     width: 700px;
-    max-width: 90%;
+    max-width: 80%;
     overflow: auto;
     height: auto;
     background: #333333;
@@ -410,8 +409,14 @@ header {
   #projectModalBackground #links {
     margin-left: auto !important; }
   #projectModalBackground .addPadding {
-    max-height: 50vh;
+    max-height: 40vh;
     overflow: auto; }
+  #projectModalBackground #modalClose {
+    position: absolute;
+    right: 16px;
+    top: 8px;
+    font-size: 2rem;
+    color: #aee8ff; }
 
 .SCScontainer {
   display: flex;

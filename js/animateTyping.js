@@ -11,7 +11,6 @@ const TypeIt = element => {
 
     for (let currentCount = 0 ; currentCount<length ; currentCount++) {
         setTimeout(() => {
-            console.log(currentCount)
             element.innerHTML = endGoal.substr(0, ++currentCount)
         }, (currentCount * speed) + extraDeley)
     }

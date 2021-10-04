@@ -27,8 +27,6 @@ var validateContactForm = function validateContactForm() {
 
   for (var k = 0; k < elements.length; k++) {
     var data = elements[k];
-    console.log(elements[k]);
-    console.log(data["ele"].value);
 
     if (!data["check"](data["ele"].value)) {
       hasErrored = true;

@@ -15,7 +15,6 @@ var TypeIt = function TypeIt(element) {
 
   var _loop = function _loop(_currentCount) {
     setTimeout(function () {
-      console.log(_currentCount);
       element.innerHTML = endGoal.substr(0, ++_currentCount);
     }, _currentCount * speed + extraDeley);
     currentCount = _currentCount;

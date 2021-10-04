@@ -30,8 +30,6 @@ var validateContactForm = () => {
     for (let k = 0; k < elements.length; k++)
     {
         let data = elements[k];
-        console.log(elements[k])
-        console.log(data["ele"].value)
         if (!data["check"](data["ele"].value))
         {
             hasErrored = true;

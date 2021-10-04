@@ -1,7 +1,10 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <?php include "includes/head.php"; ?>
+    <?php
+    $title = "SCS Scheme";
+    include "includes/head.php"; 
+    ?>
     <script src="dist/treeHouseScore.js" defer></script>
 </head>
 <body>
@@ -16,7 +19,7 @@
         </header>
         <div class="SCScontainer">
             <div class="SCSChild">
-                <h2 class="titleFont" ><a class="coolHover" href="https://www.netmatters.co.uk/">About Netmatters</a></h2>
+                <h2 class="titleFont" ><a target="_blank" class="coolHover" href="https://www.netmatters.co.uk/">About Netmatters</a></h2>
                 <ul>
                     <li>Established in 2008</li>
                     <li>Norfolk's leading technology company</li>
@@ -32,10 +35,10 @@
                 <img src="img/scsPage/treehouse.png" alt="Treehouse logo">
                 <p>Treehouse is an online learning community, featuring videos covering a number of topics from basic HTML to C# programming, iOS development, data analysis, and more. By completing courses users can earn points, allowing them to track their progress and see how much they've covered in certain areas.</p>
                 <h4>Total Score: <span id="treeHouseScore"><div class="loader"></div></span></h4>
-                <a href="https://teamtreehouse.com/traffordfewster2" class="coolHover">Check out my profile</a>
+                <a  target="_blank" href="https://teamtreehouse.com/traffordfewster2" class="coolHover">Check out my profile</a>
             </div>
             <div class="SCSChild">
-                <h2 class="titleFont"><a class="coolHover" href="https://www.netmatters.co.uk/scs-web-developer-course">Scion Scheme</a></h2>
+                <h2 class="titleFont"><a target="_blank" class="coolHover" href="https://www.netmatters.co.uk/scs-web-developer-course">Scion Scheme</a></h2>
                 <p>The Scion Coalition Scheme is an intensive, specially tailored training program run by Netmatters in order to give willing candidates the opportunity to enter the industry as web developers. Under the supervision of senior web developers, scions generally aim to complete training within six to nine months. The course is intensive and therefore the level of learning achieved is extensive in a short space of time.</p>
             </div>
         </div>

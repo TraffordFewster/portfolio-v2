@@ -4,15 +4,13 @@
     height: 100vh;
     background: rgba(0, 0, 0, 0.314);
     z-index: 1000;
-    padding: $padding;
     overflow: hidden;
     #projectModal{
         position: absolute;
         top: 50%;
         left: 50%;
         width: 700px;
-        max-width:90%;
-        //max-height: 80vh;
+        max-width:80%;
         overflow: auto;
         height: auto;
         background: $sideMenuBackground;
@@ -59,7 +57,15 @@
     }
 
     .addPadding{
-        max-height: 50vh;
+        max-height: 40vh;
         overflow: auto;
+    }
+
+    #modalClose{
+        position: absolute;
+        right: 16px;
+        top: 8px;
+        font-size: 2rem;
+        color: $accentColor;
     }
 }

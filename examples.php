@@ -1,7 +1,10 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <?php include "includes/head.php"; ?>
+    <?php
+    $title = "Code";
+    include "includes/head.php"; 
+    ?>
 
     <link rel="stylesheet" href="dist/prism.css">
     <script src="dist/prism.js" defer></script>
@@ -14,6 +17,7 @@
     <div id="projectModalBackground" style="display: none;">
         <div id="projectModal">
             <pre><code id="PMCode" class="language-lua">print('hello world')</code></pre>
+            <div id="modalClose"><i id="modalCloseI" class="fas fa-times"></i></div>
             <div class="addPadding">
                 <h4 id="PMTitle">Placeholder</h4>
                 <p id="PMDescription">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean ac sagittis nulla. Etiam interdum leo rhoncus nunc aliquet, quis commodo neque congue. Integer ultricies velit dolor, eget viverra dui tincidunt id. Nulla facilisi. Nullam posuere ligula in dolor porta egestas. Vivamus ac lacinia magna. Etiam congue leo ut quam iaculis mollis. Phasellus risus dolor, maximus sed dolor sit amet, porta aliquam lectus. Aliquam erat volutpat. Nullam faucibus diam vel rhoncus consectetur. Proin a lacus elementum, faucibus tortor eget, mollis leo.</p>
@@ -26,8 +30,8 @@
                     </ul>
 
                     <ul id="links">
-                        <li><a id="PMGit" href="#" class="coolHover"><i class="fab fa-github-square"></i></a></li>
-                        <li><a id="PMLink" href="#" class="coolHover"><i class="fas fa-link"></i></a></li>
+                        <li><a target="_blank" id="PMGit" href="#" class="coolHover"><i class="fab fa-github-square"></i></a></li>
+                        <li><a target="_blank" id="PMLink" href="#" class="coolHover"><i class="fas fa-link"></i></a></li>
                     </ul>
                 </div>
         
