@@ -67,5 +67,8 @@
         top: 8px;
         font-size: 2rem;
         color: $accentColor;
+        &:hover{
+            color: darken($accentColor,10);
+        }
     }
 }
