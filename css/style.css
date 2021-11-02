@@ -418,7 +418,8 @@ header {
     font-size: 2rem;
     color: #aee8ff; }
     #projectModalBackground #modalClose:hover {
-      color: #7bdaff; }
+      color: #7bdaff;
+      cursor: pointer; }
 
 .SCScontainer {
   display: flex;
