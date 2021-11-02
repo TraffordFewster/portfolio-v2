@@ -44,7 +44,7 @@
     "codeExamples":[
         {
             "title":"Vue Confirm Box",
-            "description":"As part of my Vue quote builder I often needed a confirmation box so I made a reusable one with my pre-existing reusable modal which is based off the Bootstrap Modal.",
+            "description":"As part of the Vue Quote builder I often needed a confirmation box so I built this reusable component using Bootstrap and a previous component I made for a basic modal. I use a slot element to allow me parse anything into the body of the confirmation message. The buttons trigger accept or deny events which are then emitted for the parent to deal with so you can then manage it with the parent for example to send a XHR request with axios once they accept.",
             "code":"code/vue-confirm.txt",
             "language":"vue",
             "git":"https://github.com/TraffordFewster/VueStore/blob/master/resources/js/components/confirmBox.vue",
@@ -68,7 +68,7 @@
         },
         {
             "title":"SQL Example",
-            "description":"This is just an example of an advanced SQL query, the goal of the query was to select all employee's who were hired before their manager and return a formatted result.<br><a target='_blank' class='coolHover' href='code/sql_pre.html'>SQL Table</a><br><a target='_blank' class='coolHover' href='code/sql_post.html'>SQL Results</a>",
+            "description":"This is an example of an advanced SQL query using subqueries, the goal of the query was to select all employee's who were hired before their manager and return a formatted result.<br><a target='_blank' class='coolHover' href='code/sql_pre.html'>SQL Table</a><br><a target='_blank' class='coolHover' href='code/sql_post.html'>SQL Results</a>",
             "code":"code/sql.txt",
             "language":"sql",
             "git":null,
