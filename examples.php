@@ -43,7 +43,6 @@
         <header>
             <div id="titleHolder">
                 <h1 class="animateTyping">Code Examples</h1>
-                <h3></h3>
             </div>
         </header>
 

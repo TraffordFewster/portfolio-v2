@@ -14,7 +14,6 @@
         <header class="">
             <div id="titleHolder">
                 <h1 class="animateTyping">Netmatters SCS Scheme</h1>
-                <h3></h3>
             </div>
         </header>
         <div class="SCScontainer">
