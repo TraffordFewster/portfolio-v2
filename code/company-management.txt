@@ -16,6 +16,4 @@ public function index()
         };
         $companies->appends(request()->query());
         return view('companies.index',compact('companies'));
-        // $companies = Company::orderBy('name')->paginate(10);
-        // return view('companies.index',compact('companies'));
     }
