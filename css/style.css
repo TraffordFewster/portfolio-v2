@@ -478,6 +478,9 @@ header {
   100% {
     transform: rotate(360deg); } }
 
+.treeHouseScoreContainer h4 {
+  display: inline-block; }
+
 #treeHouseScore {
   display: inline-block; }
 
