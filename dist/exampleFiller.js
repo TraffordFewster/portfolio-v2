@@ -77,14 +77,16 @@ var setupExamples = function setupExamples(projectsArray) {
           prismLang = "js";
         }
 
-        var projHTML = "\n                    <pre><code class=\"language-".concat(prismLang, "\">").concat(_project.code, "</code></pre>\n                    <h3>").concat(_project.title, "</h3>\n                    <button>Details <i class=\"fas fa-arrow-right\" aria-hidden=\"true\"></i></button>\n                ");
-        var element = document.getElementById("e".concat(i));
+        var projHTML = "\n                    <pre><code class=\"language-".concat(prismLang, "\">").concat(_project.code, "</code></pre>\n                    <h3>").concat(_project.title, "</h3>\n                    <button>Details <i class=\"fas fa-arrow-right\" aria-hidden=\"true\"></i></button>\n                "); // let element = document.getElementById(`e${i}`);
+
+        var element = document.createElement("article");
         element.innerHTML = projHTML;
 
         element.onclick = function () {
           projectModal(_project);
         };
 
+        document.getElementById("examples").appendChild(element);
         Prism.highlightAll();
       }
     };

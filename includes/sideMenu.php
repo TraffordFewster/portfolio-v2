@@ -11,7 +11,7 @@
     <div style="margin: auto; flex: 1;"></div>
     <hr>
     <ul>
-        <li><a href="index.html#contactForm" class="coolHover">Contact Me</a></li>
+        <li><a href="index.php#contactForm" class="coolHover">Contact Me</a></li>
     </ul>
     <hr>
     <ul id="socialMediaList">

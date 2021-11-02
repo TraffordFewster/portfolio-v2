@@ -192,6 +192,11 @@ header {
     transform: translate(-50%, -50%); }
     header #titleHolder h1, header #titleHolder h3 {
       margin: 0; }
+    @media screen and (max-width: 750px) {
+      header #titleHolder h1 {
+        font-size: 1.4rem; }
+      header #titleHolder h3 {
+        font-size: 1rem; } }
 
 @keyframes MOVE-BG {
   0% {
@@ -207,12 +212,13 @@ header {
 #projects {
   display: flex;
   flex-wrap: wrap;
-  margin: 16px; }
+  margin: 16px;
+  justify-content: center; }
   #projects article {
     display: block;
     flex: 1;
     min-width: 25%;
-    max-width: 100%;
+    max-width: 50%;
     margin: 16px;
     height: 380px;
     background: #333333;
@@ -225,14 +231,19 @@ header {
     transition: transform 200ms; }
     @media screen and (max-width: 1250px) {
       #projects article {
-        min-width: 40%; } }
+        min-width: 40%;
+        max-width: 100%; } }
     @media screen and (max-width: 750px) {
       #projects article {
         min-width: 60%; } }
     #projects article h4 {
       display: block;
       padding: 8px;
-      margin: 0; }
+      margin: 0;
+      white-space: nowrap; }
+      @media screen and (max-width: 750px) {
+        #projects article h4 {
+          font-size: .8rem; } }
     #projects article button {
       position: absolute;
       bottom: 8px;
@@ -418,7 +429,8 @@ header {
     font-size: 2rem;
     color: #aee8ff; }
     #projectModalBackground #modalClose:hover {
-      color: #7bdaff; }
+      color: #7bdaff;
+      cursor: pointer; }
 
 .SCScontainer {
   display: flex;
@@ -466,6 +478,12 @@ header {
   100% {
     transform: rotate(360deg); } }
 
+.treeHouseScoreContainer h4 {
+  display: inline-block; }
+
+#treeHouseScore {
+  display: inline-block; }
+
 #LanList {
   text-align: center;
   display: block;
@@ -483,13 +501,15 @@ header {
 #examples {
   padding: 16px;
   display: flex;
-  flex-wrap: wrap; }
+  flex-wrap: wrap;
+  justify-content: center; }
   #examples article {
     display: block;
     flex: 1;
     background: #333333;
     margin: 16px;
     min-width: 25%;
+    max-width: 50%;
     border-radius: 8px;
     border: 2px solid #aee8ff;
     box-shadow: 1px 1px 5px 1px #aee8ff;
@@ -497,7 +517,8 @@ header {
     transition: transform 200ms; }
     @media screen and (max-width: 1250px) {
       #examples article {
-        min-width: 40%; } }
+        min-width: 40%;
+        max-width: 100%; } }
     @media screen and (max-width: 750px) {
       #examples article {
         min-width: 60%; } }
@@ -507,7 +528,11 @@ header {
       overflow: auto; }
     #examples article h3 {
       margin: 0;
-      margin-left: 8px; }
+      margin-left: 8px;
+      white-space: nowrap; }
+      @media screen and (max-width: 750px) {
+        #examples article h3 {
+          font-size: .8rem; } }
     #examples article button {
       margin: 8px 0 8px 8px;
       background: rgba(0, 0, 0, 0);

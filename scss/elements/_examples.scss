@@ -2,15 +2,17 @@
     padding: $padding * 2;
     display: flex;
     flex-wrap: wrap;
-
+    justify-content: center;
     article{
         display: block;
         flex: 1;
         background: $sideMenuBackground;
         margin: $padding * 2;
         min-width: 25%;
+        max-width: 50%;
         @media screen and (max-width: $largeMax){
             min-width: 40%;
+            max-width: 100%;
         }
 
         @media screen and (max-width: $smallMax){
@@ -31,6 +33,10 @@
         h3 {
             margin: 0;
             margin-left: $padding;
+            white-space: nowrap;
+            @media screen and (max-width: $smallMax){
+                font-size: .8rem;
+            }
         }
 
         button {

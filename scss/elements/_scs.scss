@@ -52,3 +52,11 @@
   0% { transform: rotate(0deg); }
   100% { transform: rotate(360deg); }
 }
+.treeHouseScoreContainer{
+    h4{
+        display: inline-block;
+    }
+}
+#treeHouseScore{
+    display: inline-block;
+}

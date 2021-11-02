@@ -79,11 +79,13 @@ var setupExamples = projectsArray => {
                     <h3>${project.title}</h3>
                     <button>Details <i class="fas fa-arrow-right" aria-hidden="true"></i></button>
                 `
-                let element = document.getElementById(`e${i}`);
+                // let element = document.getElementById(`e${i}`);
+                let element = document.createElement("article")
                 element.innerHTML = projHTML;
                 element.onclick = () => {
                     projectModal(project)
                 }
+                document.getElementById("examples").appendChild(element)
                 Prism.highlightAll()
             }
         };

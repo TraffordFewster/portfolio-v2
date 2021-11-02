@@ -28,6 +28,14 @@ header{
         h1,h3{
             margin: 0;
         }
+        @media screen and (max-width: $smallMax){
+          h1 {
+            font-size: 1.4rem;
+          }
+          h3  {
+            font-size: 1rem;
+          }
+        }
         transform: translate(-50%,-50%);
     }
 }

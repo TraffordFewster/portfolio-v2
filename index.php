@@ -133,12 +133,12 @@
 
 
         <div id="projects">
-            <article id="p0"></article>
+            <!-- <article id="p0"></article>
             <article id="p1"></article>
             <article id="p2"></article>
             <article id="p3"></article>
             <article id="p4"></article>
-            <article id="p5"></article>
+            <article id="p5"></article> -->
         </div>
 
 

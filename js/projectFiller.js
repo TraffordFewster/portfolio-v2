@@ -84,10 +84,12 @@ var setupProjects = projectsArray => {
             <h4>${project.title}</h4>
             <button>Details <i class="fas fa-arrow-right"></i></button>
         `
-        document.getElementById(`p${i}`).innerHTML = projHTML;
-        document.getElementById(`p${i}`).onclick = () => {
+        let element = document.createElement("article")
+        element.innerHTML = projHTML;
+        element.onclick = () => {
             projectModal(project)
         }
+        document.getElementById("projects").appendChild(element)
 
     }
 }

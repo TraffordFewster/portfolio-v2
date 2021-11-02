@@ -8,11 +8,9 @@ $('.EmailBuckets').on('click', '.icons', (e) => {
 		let h = child.height(); // Get auto height
 		child.css('height', 0); // Set back to 0 for the transition
 		setTimeout(() => {
-			// Timeout cos css is weird
-			child.css('height', h); // set height
-
+			child.css('height', h); // Set height
 			setTimeout(() => {
-				child.css('height', 'auto'); // set back to auto so if new lines are added it will still expand
+				child.css('height', 'auto'); // Set back to auto so if new lines are added it will still expand
 			}, 500);
 		}, 100);
 	} else {

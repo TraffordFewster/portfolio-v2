@@ -14,7 +14,6 @@
         <header class="">
             <div id="titleHolder">
                 <h1 class="animateTyping">Netmatters SCS Scheme</h1>
-                <h3></h3>
             </div>
         </header>
         <div class="SCScontainer">
@@ -34,7 +33,7 @@
             <div class="SCSChild">
                 <img src="img/scsPage/treehouse.png" alt="Treehouse logo">
                 <p>Treehouse is an online learning community, featuring videos covering a number of topics from basic HTML to C# programming, iOS development, data analysis, and more. By completing courses users can earn points, allowing them to track their progress and see how much they've covered in certain areas.</p>
-                <h4>Total Score: <span id="treeHouseScore"><div class="loader"></div></span></h4>
+                <div class="treeHouseScoreContainer"><h4>Total Score:</h4> <div id="treeHouseScore"><div class="loader"></div></div></div>
                 <a  target="_blank" href="https://teamtreehouse.com/traffordfewster2" class="coolHover">Check out my profile</a>
             </div>
             <div class="SCSChild">
