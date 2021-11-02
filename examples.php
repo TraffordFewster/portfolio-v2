@@ -48,7 +48,7 @@
         </header>
 
         <div id="examples">
-            <article id="e0">
+            <!-- <article id="e0">
                 <pre><code class="language-lua">print('hello world')</code></pre>
                 <h3>Basic Hello World</h3>
                 <button>Details <i class="fas fa-arrow-right" aria-hidden="true"></i></button>
@@ -57,7 +57,7 @@
             <article id="e2"></article>
             <article id="e3"></article>
             <article id="e4"></article>
-            <article id="e5"></article>
+            <article id="e5"></article> -->
         </div>
     </main>
 </body>
