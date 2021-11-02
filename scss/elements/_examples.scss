@@ -33,6 +33,10 @@
         h3 {
             margin: 0;
             margin-left: $padding;
+            white-space: nowrap;
+            @media screen and (max-width: $smallMax){
+                font-size: .8rem;
+            }
         }
 
         button {

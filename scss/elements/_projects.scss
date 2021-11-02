@@ -30,6 +30,10 @@
             display: block;
             padding: $padding;
             margin: 0;
+            white-space: nowrap;
+            @media screen and (max-width: $smallMax){
+                font-size: .8rem;
+            }
         }
         button {
             position: absolute;

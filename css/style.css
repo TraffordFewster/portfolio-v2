@@ -192,6 +192,11 @@ header {
     transform: translate(-50%, -50%); }
     header #titleHolder h1, header #titleHolder h3 {
       margin: 0; }
+    @media screen and (max-width: 750px) {
+      header #titleHolder h1 {
+        font-size: 1.4rem; }
+      header #titleHolder h3 {
+        font-size: 1rem; } }
 
 @keyframes MOVE-BG {
   0% {
@@ -234,7 +239,11 @@ header {
     #projects article h4 {
       display: block;
       padding: 8px;
-      margin: 0; }
+      margin: 0;
+      white-space: nowrap; }
+      @media screen and (max-width: 750px) {
+        #projects article h4 {
+          font-size: .8rem; } }
     #projects article button {
       position: absolute;
       bottom: 8px;
@@ -513,7 +522,11 @@ header {
       overflow: auto; }
     #examples article h3 {
       margin: 0;
-      margin-left: 8px; }
+      margin-left: 8px;
+      white-space: nowrap; }
+      @media screen and (max-width: 750px) {
+        #examples article h3 {
+          font-size: .8rem; } }
     #examples article button {
       margin: 8px 0 8px 8px;
       background: rgba(0, 0, 0, 0);
