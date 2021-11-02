@@ -79,11 +79,14 @@ var setupProjects = function setupProjects(projectsArray) {
   var _loop = function _loop(i) {
     var project = projectsArray[i];
     var projHTML = "\n            <div class=\"img\" style=\"background-image: url(".concat(project.img, ")\">\n\n            </div>\n            <h4>").concat(project.title, "</h4>\n            <button>Details <i class=\"fas fa-arrow-right\"></i></button>\n        ");
-    document.getElementById("p".concat(i)).innerHTML = projHTML;
+    var element = document.createElement("article");
+    element.innerHTML = projHTML;
 
-    document.getElementById("p".concat(i)).onclick = function () {
+    element.onclick = function () {
       projectModal(project);
     };
+
+    document.getElementById("projects").appendChild(element);
   };
 
   for (var i = 0; i < projectsArray.length; i++) {

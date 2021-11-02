@@ -2,6 +2,7 @@
     display: flex;
     flex-wrap: wrap;
     margin: $padding * 2;
+    justify-content: center;
     article{
         display: block;
         flex: 1;
@@ -13,7 +14,7 @@
         @media screen and (max-width: $smallMax){
             min-width: 60%;
         }
-        max-width: 100%;
+        max-width: 50%;
         margin: $padding * 2;
         height: 380px;
         background: $sideMenuBackground;

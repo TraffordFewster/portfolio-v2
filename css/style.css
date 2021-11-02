@@ -207,12 +207,13 @@ header {
 #projects {
   display: flex;
   flex-wrap: wrap;
-  margin: 16px; }
+  margin: 16px;
+  justify-content: center; }
   #projects article {
     display: block;
     flex: 1;
     min-width: 25%;
-    max-width: 100%;
+    max-width: 50%;
     margin: 16px;
     height: 380px;
     background: #333333;
@@ -484,13 +485,15 @@ header {
 #examples {
   padding: 16px;
   display: flex;
-  flex-wrap: wrap; }
+  flex-wrap: wrap;
+  justify-content: center; }
   #examples article {
     display: block;
     flex: 1;
     background: #333333;
     margin: 16px;
     min-width: 25%;
+    max-width: 50%;
     border-radius: 8px;
     border: 2px solid #aee8ff;
     box-shadow: 1px 1px 5px 1px #aee8ff;
