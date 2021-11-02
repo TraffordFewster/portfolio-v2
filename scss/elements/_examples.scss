@@ -12,6 +12,7 @@
         max-width: 50%;
         @media screen and (max-width: $largeMax){
             min-width: 40%;
+            max-width: 100%;
         }
 
         @media screen and (max-width: $smallMax){

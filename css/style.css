@@ -226,7 +226,8 @@ header {
     transition: transform 200ms; }
     @media screen and (max-width: 1250px) {
       #projects article {
-        min-width: 40%; } }
+        min-width: 40%;
+        max-width: 100%; } }
     @media screen and (max-width: 750px) {
       #projects article {
         min-width: 60%; } }
@@ -501,7 +502,8 @@ header {
     transition: transform 200ms; }
     @media screen and (max-width: 1250px) {
       #examples article {
-        min-width: 40%; } }
+        min-width: 40%;
+        max-width: 100%; } }
     @media screen and (max-width: 750px) {
       #examples article {
         min-width: 60%; } }
