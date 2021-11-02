@@ -478,6 +478,9 @@ header {
   100% {
     transform: rotate(360deg); } }
 
+#treeHouseScore {
+  display: inline-block; }
+
 #LanList {
   text-align: center;
   display: block;
